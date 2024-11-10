@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Projects\\Repository\\OnlineTips\\OnlineTipsService\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B4FE817D-5679-4490-ABE2-0AD6A00693BF}|OnlineTipsService.csproj|d:\\projects\\repository\\onlinetips\\onlinetipsservice\\domain\\bankcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4FE817D-5679-4490-ABE2-0AD6A00693BF}|OnlineTipsService.csproj|solutionrelative:domain\\bankcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4FE817D-5679-4490-ABE2-0AD6A00693BF}|OnlineTipsService.csproj|d:\\projects\\repository\\onlinetips\\onlinetipsservice\\domain\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4FE817D-5679-4490-ABE2-0AD6A00693BF}|OnlineTipsService.csproj|solutionrelative:domain\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4FE817D-5679-4490-ABE2-0AD6A00693BF}|OnlineTipsService.csproj|d:\\projects\\repository\\onlinetips\\onlinetipsservice\\domain\\organization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4FE817D-5679-4490-ABE2-0AD6A00693BF}|OnlineTipsService.csproj|solutionrelative:domain\\organization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4FE817D-5679-4490-ABE2-0AD6A00693BF}|OnlineTipsService.csproj|d:\\projects\\repository\\onlinetips\\onlinetipsservice\\domain\\people.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4FE817D-5679-4490-ABE2-0AD6A00693BF}|OnlineTipsService.csproj|solutionrelative:domain\\people.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4FE817D-5679-4490-ABE2-0AD6A00693BF}|OnlineTipsService.csproj|d:\\projects\\repository\\onlinetips\\onlinetipsservice\\app\\appcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4FE817D-5679-4490-ABE2-0AD6A00693BF}|OnlineTipsService.csproj|solutionrelative:app\\appcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4FE817D-5679-4490-ABE2-0AD6A00693BF}|OnlineTipsService.csproj|d:\\projects\\repository\\onlinetips\\onlinetipsservice\\infrastructure\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4FE817D-5679-4490-ABE2-0AD6A00693BF}|OnlineTipsService.csproj|solutionrelative:infrastructure\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4FE817D-5679-4490-ABE2-0AD6A00693BF}|OnlineTipsService.csproj|d:\\projects\\repository\\onlinetips\\onlinetipsservice\\infrastructure\\valuetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4FE817D-5679-4490-ABE2-0AD6A00693BF}|OnlineTipsService.csproj|solutionrelative:infrastructure\\valuetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppContext.cs",
+              "DocumentMoniker": "D:\\Projects\\Repository\\OnlineTips\\OnlineTipsService\\App\\AppContext.cs",
+              "RelativeDocumentMoniker": "App\\AppContext.cs",
+              "ToolTip": "D:\\Projects\\Repository\\OnlineTips\\OnlineTipsService\\App\\AppContext.cs",
+              "RelativeToolTip": "App\\AppContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAB7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T08:43:01.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BankCard.cs",
+              "DocumentMoniker": "D:\\Projects\\Repository\\OnlineTips\\OnlineTipsService\\Domain\\BankCard.cs",
+              "RelativeDocumentMoniker": "Domain\\BankCard.cs",
+              "ToolTip": "D:\\Projects\\Repository\\OnlineTips\\OnlineTipsService\\Domain\\BankCard.cs",
+              "RelativeToolTip": "Domain\\BankCard.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T08:03:09.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\Projects\\Repository\\OnlineTips\\OnlineTipsService\\Domain\\Employee.cs",
+              "RelativeDocumentMoniker": "Domain\\Employee.cs",
+              "ToolTip": "D:\\Projects\\Repository\\OnlineTips\\OnlineTipsService\\Domain\\Employee.cs",
+              "RelativeToolTip": "Domain\\Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T07:55:43.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Organization.cs",
+              "DocumentMoniker": "D:\\Projects\\Repository\\OnlineTips\\OnlineTipsService\\Domain\\Organization.cs",
+              "RelativeDocumentMoniker": "Domain\\Organization.cs",
+              "ToolTip": "D:\\Projects\\Repository\\OnlineTips\\OnlineTipsService\\Domain\\Organization.cs",
+              "RelativeToolTip": "Domain\\Organization.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T07:52:50.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "People.cs",
+              "DocumentMoniker": "D:\\Projects\\Repository\\OnlineTips\\OnlineTipsService\\Domain\\People.cs",
+              "RelativeDocumentMoniker": "Domain\\People.cs",
+              "ToolTip": "D:\\Projects\\Repository\\OnlineTips\\OnlineTipsService\\Domain\\People.cs",
+              "RelativeToolTip": "Domain\\People.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T07:52:44.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ValueType.cs",
+              "DocumentMoniker": "D:\\Projects\\Repository\\OnlineTips\\OnlineTipsService\\Infrastructure\\ValueType.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\ValueType.cs",
+              "ToolTip": "D:\\Projects\\Repository\\OnlineTips\\OnlineTipsService\\Infrastructure\\ValueType.cs",
+              "RelativeToolTip": "Infrastructure\\ValueType.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T07:52:13.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Entity.cs",
+              "DocumentMoniker": "D:\\Projects\\Repository\\OnlineTips\\OnlineTipsService\\Infrastructure\\Entity.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Entity.cs",
+              "ToolTip": "D:\\Projects\\Repository\\OnlineTips\\OnlineTipsService\\Infrastructure\\Entity.cs",
+              "RelativeToolTip": "Infrastructure\\Entity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T07:52:08.327Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

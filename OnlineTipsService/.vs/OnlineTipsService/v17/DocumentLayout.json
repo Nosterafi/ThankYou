@@ -1,0 +1,190 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Projects\\Repository\\OnlineTips\\OnlineTipsService\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B4FE817D-5679-4490-ABE2-0AD6A00693BF}|OnlineTipsService.csproj|d:\\projects\\repository\\onlinetips\\onlinetipsservice\\domain\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4FE817D-5679-4490-ABE2-0AD6A00693BF}|OnlineTipsService.csproj|solutionrelative:domain\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4FE817D-5679-4490-ABE2-0AD6A00693BF}|OnlineTipsService.csproj|d:\\projects\\repository\\onlinetips\\onlinetipsservice\\app\\postgrescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4FE817D-5679-4490-ABE2-0AD6A00693BF}|OnlineTipsService.csproj|solutionrelative:app\\postgrescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4FE817D-5679-4490-ABE2-0AD6A00693BF}|OnlineTipsService.csproj|d:\\projects\\repository\\onlinetips\\onlinetipsservice\\domain\\merchant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4FE817D-5679-4490-ABE2-0AD6A00693BF}|OnlineTipsService.csproj|solutionrelative:domain\\merchant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4FE817D-5679-4490-ABE2-0AD6A00693BF}|OnlineTipsService.csproj|d:\\projects\\repository\\onlinetips\\onlinetipsservice\\domain\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4FE817D-5679-4490-ABE2-0AD6A00693BF}|OnlineTipsService.csproj|solutionrelative:domain\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4FE817D-5679-4490-ABE2-0AD6A00693BF}|OnlineTipsService.csproj|d:\\projects\\repository\\onlinetips\\onlinetipsservice\\domain\\bankcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4FE817D-5679-4490-ABE2-0AD6A00693BF}|OnlineTipsService.csproj|solutionrelative:domain\\bankcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4FE817D-5679-4490-ABE2-0AD6A00693BF}|OnlineTipsService.csproj|d:\\projects\\repository\\onlinetips\\onlinetipsservice\\domain\\bank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4FE817D-5679-4490-ABE2-0AD6A00693BF}|OnlineTipsService.csproj|solutionrelative:domain\\bank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4FE817D-5679-4490-ABE2-0AD6A00693BF}|OnlineTipsService.csproj|d:\\projects\\repository\\onlinetips\\onlinetipsservice\\domain\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4FE817D-5679-4490-ABE2-0AD6A00693BF}|OnlineTipsService.csproj|solutionrelative:domain\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4FE817D-5679-4490-ABE2-0AD6A00693BF}|OnlineTipsService.csproj|d:\\projects\\repository\\onlinetips\\onlinetipsservice\\domain\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4FE817D-5679-4490-ABE2-0AD6A00693BF}|OnlineTipsService.csproj|solutionrelative:domain\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4FE817D-5679-4490-ABE2-0AD6A00693BF}|OnlineTipsService.csproj|d:\\projects\\repository\\onlinetips\\onlinetipsservice\\domain\\tip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4FE817D-5679-4490-ABE2-0AD6A00693BF}|OnlineTipsService.csproj|solutionrelative:domain\\tip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4FE817D-5679-4490-ABE2-0AD6A00693BF}|OnlineTipsService.csproj|d:\\projects\\repository\\onlinetips\\onlinetipsservice\\domain\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4FE817D-5679-4490-ABE2-0AD6A00693BF}|OnlineTipsService.csproj|solutionrelative:domain\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BankCard.cs",
+              "DocumentMoniker": "D:\\Projects\\Repository\\OnlineTips\\OnlineTipsService\\Domain\\BankCard.cs",
+              "RelativeDocumentMoniker": "Domain\\BankCard.cs",
+              "ToolTip": "D:\\Projects\\Repository\\OnlineTips\\OnlineTipsService\\Domain\\BankCard.cs",
+              "RelativeToolTip": "Domain\\BankCard.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T15:22:01.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Bank.cs",
+              "DocumentMoniker": "D:\\Projects\\Repository\\OnlineTips\\OnlineTipsService\\Domain\\Bank.cs",
+              "RelativeDocumentMoniker": "Domain\\Bank.cs",
+              "ToolTip": "D:\\Projects\\Repository\\OnlineTips\\OnlineTipsService\\Domain\\Bank.cs",
+              "RelativeToolTip": "Domain\\Bank.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T15:21:47.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PostgresContext.cs",
+              "DocumentMoniker": "D:\\Projects\\Repository\\OnlineTips\\OnlineTipsService\\App\\PostgresContext.cs",
+              "RelativeDocumentMoniker": "App\\PostgresContext.cs",
+              "ToolTip": "D:\\Projects\\Repository\\OnlineTips\\OnlineTipsService\\App\\PostgresContext.cs",
+              "RelativeToolTip": "App\\PostgresContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T15:21:04.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Client.cs",
+              "DocumentMoniker": "D:\\Projects\\Repository\\OnlineTips\\OnlineTipsService\\Domain\\Client.cs",
+              "RelativeDocumentMoniker": "Domain\\Client.cs",
+              "ToolTip": "D:\\Projects\\Repository\\OnlineTips\\OnlineTipsService\\Domain\\Client.cs",
+              "RelativeToolTip": "Domain\\Client.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T15:22:07.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Merchant.cs",
+              "DocumentMoniker": "D:\\Projects\\Repository\\OnlineTips\\OnlineTipsService\\Domain\\Merchant.cs",
+              "RelativeDocumentMoniker": "Domain\\Merchant.cs",
+              "ToolTip": "D:\\Projects\\Repository\\OnlineTips\\OnlineTipsService\\Domain\\Merchant.cs",
+              "RelativeToolTip": "Domain\\Merchant.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T15:25:02.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\Projects\\Repository\\OnlineTips\\OnlineTipsService\\Domain\\Employee.cs",
+              "RelativeDocumentMoniker": "Domain\\Employee.cs",
+              "ToolTip": "D:\\Projects\\Repository\\OnlineTips\\OnlineTipsService\\Domain\\Employee.cs",
+              "RelativeToolTip": "Domain\\Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T15:22:32.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Projects\\Repository\\OnlineTips\\OnlineTipsService\\Domain\\User.cs",
+              "RelativeDocumentMoniker": "Domain\\User.cs",
+              "ToolTip": "D:\\Projects\\Repository\\OnlineTips\\OnlineTipsService\\Domain\\User.cs",
+              "RelativeToolTip": "Domain\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T15:25:35.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Projects\\Repository\\OnlineTips\\OnlineTipsService\\Domain\\Program.cs",
+              "RelativeDocumentMoniker": "Domain\\Program.cs",
+              "ToolTip": "D:\\Projects\\Repository\\OnlineTips\\OnlineTipsService\\Domain\\Program.cs",
+              "RelativeToolTip": "Domain\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T15:25:33.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Tip.cs",
+              "DocumentMoniker": "D:\\Projects\\Repository\\OnlineTips\\OnlineTipsService\\Domain\\Tip.cs",
+              "RelativeDocumentMoniker": "Domain\\Tip.cs",
+              "ToolTip": "D:\\Projects\\Repository\\OnlineTips\\OnlineTipsService\\Domain\\Tip.cs",
+              "RelativeToolTip": "Domain\\Tip.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T15:23:47.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Position.cs",
+              "DocumentMoniker": "D:\\Projects\\Repository\\OnlineTips\\OnlineTipsService\\Domain\\Position.cs",
+              "RelativeDocumentMoniker": "Domain\\Position.cs",
+              "ToolTip": "D:\\Projects\\Repository\\OnlineTips\\OnlineTipsService\\Domain\\Position.cs",
+              "RelativeToolTip": "Domain\\Position.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T15:25:08.236Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
