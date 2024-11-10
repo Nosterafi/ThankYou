@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Регистрация</title>
+  <link rel="stylesheet" href="reset.css"> 
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+  <header class="header">
+    <div class="container  header__container">
+        <h1 class="logo">ThankU</h1>
+        <nav class="header__nav">
+            <ul>
+                <li><a href="#!">Поддержка</a></li>
+                <li><a href="#!">FAQ</a></li>
+                <li><a href="#!">Профиль</a></li>
+            </ul>
+        </nav>
+    </div>
+  </header>
+  
+  <main class="main">
+    <form action="action_page.php">
+      <div class="container">
+        <h1>Регистрация заведения</h1>
+       
+    
+        <label for="place-name"><b>Название заведения</b></label>
+        <input type="text" placeholder="Введите название" name="place-name" required>
+    
+        <label for="phone"><b>Телефон</b></label>
+        <input type="tel" placeholder="Введите телефон" name="phone" required>
+    
+        <label for="address"><b>Адрес</b></label>
+        <input type="text" placeholder="Введите адрес" name="address-repeat" required>
+        
+        <label for="owner-name"><b>Имя владельца</b></label>
+        <input type="text" placeholder="Введите имя" name="owner-name" required>
+    
+        <button type="submit" class="registerbtn">Подать заявку</button>
+      </div>
+    
+      <div class="container signin">
+        <p>Уже есть аккаунт? <a href="D:\Apostol\sign\index.html">Вход</a>.</p>
+      </div>
+    </form>
+  </main>
+</body>
+</html>
