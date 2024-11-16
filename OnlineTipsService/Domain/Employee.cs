@@ -19,9 +19,9 @@ public partial class Employee
 
     public short MerchantId { get; set; }
 
-    public short Position { get; set; }
-
     public float EmployeeRating { get; set; }
+
+    public string Position { get; set; } = null!;
 
     public virtual Merchant Merchant { get; set; } = null!;
 

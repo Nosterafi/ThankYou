@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OnlineTipsService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9072d4024c5d1bb8260bcbdd3319761bcc05a04b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("OnlineTipsService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OnlineTipsService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

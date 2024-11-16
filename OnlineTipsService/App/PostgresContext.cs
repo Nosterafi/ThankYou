@@ -123,7 +123,9 @@ public partial class PostgresContext : DbContext
             entity.Property(e => e.PhoneNumber)
                 .HasColumnType("character varying")
                 .HasColumnName("phone_number");
-            entity.Property(e => e.Position).HasColumnName("position");
+            entity.Property(e => e.Position)
+                .HasColumnType("character varying")
+                .HasColumnName("position");
             entity.Property(e => e.Surname)
                 .HasColumnType("character varying")
                 .HasColumnName("surname");
@@ -154,17 +156,17 @@ public partial class PostgresContext : DbContext
             entity.Property(e => e.Menu)
                 .HasColumnType("character varying")
                 .HasColumnName("menu");
+            entity.Property(e => e.Password)
+                .HasColumnType("character varying")
+                .HasColumnName("password");
         });
 
         modelBuilder.Entity<Position>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("positions_pk");
+            entity.HasKey(e => e.Name).HasName("positions_pk");
 
             entity.ToTable("positions");
 
-            entity.Property(e => e.Id)
-                .UseIdentityAlwaysColumn()
-                .HasColumnName("id");
             entity.Property(e => e.Name)
                 .HasColumnType("character varying")
                 .HasColumnName("name");

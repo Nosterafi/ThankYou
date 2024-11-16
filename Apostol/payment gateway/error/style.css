@@ -72,6 +72,15 @@ p {
     height: 100vh;
 
     padding: 150px 0;
+
+    text-align: center;
+}
+.error img {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+
+    margin-bottom: 40px;
 }
 
 .main h1 {
@@ -102,12 +111,6 @@ p {
     color: #1324e2;
 }
 
-.filling {
-    border-radius: 10px;
-    border: 1px solid #FDFDFD;
-
-    padding: 50px 0;
-}
 
 
 @media (max-width: 400px) {
