@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThankU</title>
+    <link rel="stylesheet" href="~/css/main/reset.css">
+    <link rel="stylesheet" href="~/css/main/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container  header__container">
+            <h1 class="logo">ThankU</h1>
+            
+            <nav class="header__nav">
+                <ul>
+                    <li><a href="#!">Поддержка</a></li>
+                    <li><a href="#!">FAQ</a></li>
+                    <li><a href="#!">Профиль</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="main"> 
+        <section class="welcome">
+            <div class="container">
+                <h2 class="welcome__heading">Чаевые по QR-коду</h2>
+                <p  class="welcome__heading-text">Введите код сотрудника или отсканируйте QR-code:<p>
+                <input type="text" class="welcome__input-code" required minlength="6" maxlength="6">
+                <div class="welcome__links">
+                    <button type="submit" class="link-code">Отправить чаевые</button>
+                    <button class="link-primary">Подключить заведение</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="information">
+            <div class="container">
+                <h3 class="title">Что мы предлагаем</h3>
+                <p class="subtitle">Таки да</p>
+                <div class="card-wrapper">
+                    <div class="card">
+                        <img src="~/images/main/diagram 1.png" alt="icon">
+                        <h4>Отчётность и аналитика</h4>
+                        <p>Платформа предоставляет мерчантам отчетность по транзакциям и чаевым</p>
+                    </div>
+                    <div class="card">
+                        <img src="~/images/main/distributed 1 (1).png" alt="icon">
+                        <h4>Широкая интеграция</h4>
+                        <p>Интеграция с различными платёжными системами и предприятиями сферы услуг</p>
+                    </div>
+                    <div class="card">
+                        <img src="~/images/main/touchscreen 1.png" alt="icon">
+                        <h4>Удобный интерфейс</h4>
+                        <p>Простой и интуитивно понятный интерфейс, который легко использовать как клиентам, так и сотрудникам.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__desc">
+            <div class="container footer__desc-container">
+                <div class="footer__support">
+                    <h4>Техподдержка</h4>
+                    <ul>
+                        <li><img src="~/images/main/image 21.png" alt="icon">Написать в Телеграм</li>
+                        <li><img src="~/images/main/image 22.png" alt="icon">Написать в ВК</li>
+                        <li>Написать на почту</li>
+                    </ul>
+                </div>
+                <div class="footer__collaboration">
+                    <h4>Сотрудничетсво</h4>
+                    <ul>
+                        <li><img src="~/images/main/image 21.png" alt="icon">@(321312)</li>
+                        <li><img src="~/images/main/image 22.png" alt="icon">@(321321)</li>
+                        <li>123123123@mail.ru</li>
+                    </ul>
+                </div>
+                <div class="footer__answer">
+                    <h4>Ответы на вопросы</h4>
+                    <ul>
+                        <li>Как оплатить чаевые по QR-коду?</li>
+                        <li>Как отсканировать QR-код?</li>
+                        <li>Какие есть сопособы оплаты?</li>
+                        <li>Где можно отсканировать QR-код?</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

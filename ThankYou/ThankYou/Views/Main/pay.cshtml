@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThankU</title>
+    <link rel="stylesheet" href="~/css/pay/reset.css">
+    <link rel="stylesheet" href="~/css/pay/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container  header__container">
+            <h1 class="logo">ThankU</h1>
+            <nav class="header__nav">
+                <ul>
+                    <li><a href="#!">Поддержка</a></li>
+                    <li><a href="#!">FAQ</a></li>
+                    <li><a href="#!">Профиль</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="pay">
+            <div class="container">
+                <div class="pay__heading">
+                    <div class="pay__ava">
+                        <img src="~/images/pay/1de3dc07-8cb1-4122-a1e1-487a0d3e96ea.png" alt="image">
+                    </div>
+                    <div class="pay__info">
+                        <h4>Название заведения</h4>
+                        <p>Имя сотрудника</p>
+                        <p>4.9/5 <img src="~/images/pay/adsad.png" alt="icon"></p>
+                    </div>
+                </div>
+
+                <div class="pay__selection">
+                    <div class="pay__sum">
+                        <div class="sum">
+                            <button>100р</button>
+                        </div>
+                        <div class="sum">
+                            <button>600р</button>
+                        </div>
+                        <div class="sum">
+                            <button>700р</button>
+                        </div>
+                        <div class="sum">
+                            <button>1000р</button>
+                        </div>
+                    </div>
+
+                    <div class="pay__selfsum-cont">
+                        <button class="pay__selfsum">Ввести свою сумму</button>
+                    </div>
+                </div>
+
+                <div class="pay__way">
+                    <h4>Выберете способ оплаты</h4>
+                    <div class="pay__way-select">
+                        <select class="select-css" name="way-payment" id="way-payment">
+                            <option value="spb">СПБ</option>
+                            <option value="card">Банковская карта</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="pay__rate">
+                    <h4>Оцените качество обслуживания</h4>
+                    <div class="pay__stars">
+                        <div class="star">
+                            <img src="~/images/pay/Vector (1).png" alt="icon">
+                        </div>
+                        <div class="star">
+                            <img src="~/images/pay/Vector (1).png" alt="icon">
+                        </div>
+                        <div class="star">
+                            <img src="~/images/pay/Vector (1).png" alt="icon">
+                        </div>
+                        <div class="star">
+                            <img src="~/images/pay/Vector (1).png" alt="icon">
+                        </div>
+                        <div class="star">
+                            <img src="~/images/pay/Vector (1).png" alt="icon">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pay__feedback">
+                    <textarea class="" name="feedback" id="feedback"></textarea>
+                </div>
+
+                <div class="pay__send-cont">
+                    <button class="pay__send">Отправить</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
