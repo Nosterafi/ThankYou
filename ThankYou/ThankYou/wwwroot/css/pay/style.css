@@ -11,7 +11,7 @@ body {
 .container {
     max-width: 670px;
     padding: 0 15px;
-    margin:  0 auto;
+    margin: 0 auto;
 }
 
 p {
@@ -25,7 +25,7 @@ p {
 
 /*==================  HEADER ===================*/
 
-.header { 
+.header {
     padding: 12px 0;
     background-color: #30A8FF;
 }
@@ -39,13 +39,12 @@ p {
 .logo {
     font-size: 25px;
     letter-spacing: 4px;
-
     color: black;
 }
 
 .header__nav ul {
     display: flex;
-} 
+}
 
 .header__nav li + li {
     margin-left: 40px;
@@ -57,26 +56,25 @@ p {
     transition: color 0.2s;
 }
 
-.header__nav a:hover {
-    color: #0E20E7;
-}
+    .header__nav a:hover {
+        color: #0E20E7;
+    }
 
-.header__nav a:active {
-    color: #0F1DB2;
-}
+    .header__nav a:active {
+        color: #0F1DB2;
+    }
 
 /*================== MAIN ===================*/
 
 .main {
     background-color: #191919;
-    
 }
 
 /*================== PAY INFO ===================*/
 
 .pay {
     padding: 50px 0;
-    margin:  0 auto;
+    margin: 0 auto;
 }
 
 .pay__heading {
@@ -91,26 +89,27 @@ p {
     height: 150px;
     object-fit: contain;
 }
+
 .pay__info {
     font-size: 18px;
     color: #FDFDFD;
 }
 
-.pay__info h4 {
-    line-height: 1;
-    margin-bottom: 30px;
-}
+    .pay__info h4 {
+        line-height: 1;
+        margin-bottom: 30px;
+    }
 
-.pay__info p {
-    line-height: 1;
-    margin-bottom: 30px;
-}
+    .pay__info p {
+        line-height: 1;
+        margin-bottom: 30px;
+    }
 
-.pay__info img {
-    width: 18px;
-    height: 18px;
-    object-fit: contain;
-}
+    .pay__info img {
+        width: 18px;
+        height: 18px;
+        object-fit: contain;
+    }
 
 /*================== PAY SUM ===================*/
 
@@ -119,36 +118,33 @@ p {
     gap: 20px;
     flex-wrap: wrap;
     justify-content: space-evenly;
-
     margin-bottom: 30px;
-
 }
 
 .pay__selection {
     font-size: 18px;
-    color: #0f0f0f;    
+    color: #0f0f0f;
 }
 
 .sum {
-    
-    padding: 10px 30px;  
+    padding: 10px 30px;
     border-radius: 20px;
-
     background-color: #30A8FF;
 }
 
 .pay__selfsum-cont {
     text-align: center;
+    margin-bottom: 50px;
+    min-width: 200px;
+    height: 25px;
+    border-radius: 4px;
 }
 
 .pay__selfsum {
-    display: inline-block;
-
-    padding: 10px 30px;  
+    padding: 10px 30px;
     border-radius: 20px;
     min-width: 300px;
-
-    background-color: #30A8FF;
+    background-color: #0F0F0F !important;
 }
 
 /*================== PAYMENT METHOD ===================*/
@@ -157,58 +153,61 @@ p {
     margin-top: 50px;
 }
 
-.pay__way h4 {
-    font-size: 18px;
-    color: #FDFDFD;
-    line-height: 1;
-    margin-bottom: 30px;
-}
+    .pay__way h4 {
+        font-size: 18px;
+        color: #FDFDFD;
+        line-height: 1;
+        margin-bottom: 30px;
+    }
 
-.select-css { 
-    display: block; 
-    font-size: 16px; 
-    font-family: sans-serif; 
-    font-weight: 700; 
-    color: #444; 
-    line-height: 1.3; 
-    padding: .6em 1.4em .5em .8em; width: 100%; 
-    max-width: 100%; 
-    box-sizing: border-box; 
-    margin: 0; 
+.select-css {
+    display: block;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #444;
+    line-height: 1.3;
+    padding: .6em 1.4em .5em .8em;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0;
     border: 1px solid #aaa;
-    box-shadow: 0 1px 0 1px rgba(0,0,0,.04); 
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
     border-radius: .5em;
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
-    background-color: #fff; 
-    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'), linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%); 
+    background-color: #fff;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'), linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
     background-repeat: no-repeat, repeat;
     background-position: right .7em top 50%, 0 0;
-    background-size: .65em auto, 100%; 
-} 
+    background-size: .65em auto, 100%;
+}
 
-.select-css::-ms-expand { 
-    display: none; } 
+    .select-css::-ms-expand {
+        display: none;
+    }
 
-.select-css:hover { 
-    border-color: #888; 
-} 
+    .select-css:hover {
+        border-color: #888;
+    }
 
-.select-css:focus { 
-    border-color: #aaa; 
-    box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
-    box-shadow: 0 0 0 3px -moz-mac-focusring; 
-    color: #222;
-    outline: none; 
-} 
-.select-css option { 
-    font-weight:normal; 
-} 
+    .select-css:focus {
+        border-color: #aaa;
+        box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+        box-shadow: 0 0 0 3px -moz-mac-focusring;
+        color: #222;
+        outline: none;
+    }
 
-*[dir="rtl"] .select-css, :root:lang(ar) .select-css, :root:lang(iw) .select-css { 
-    background-position: left .7em top 50%, 0 0; 
-    padding: .6em .8em .5em 1.4em; 
+    .select-css option {
+        font-weight: normal;
+    }
+
+*[dir="rtl"] .select-css, :root:lang(ar) .select-css, :root:lang(iw) .select-css {
+    background-position: left .7em top 50%, 0 0;
+    padding: .6em .8em .5em 1.4em;
 }
 
 /*================== PAY RATE ===================*/
@@ -217,20 +216,21 @@ p {
     text-align: center;
 }
 
-.pay__rate h4 {
-    margin-top: 30px;
-    font-size: 18px;
-    color: #FDFDFD;
-    line-height: 1;
-    margin-bottom: 30px;
-}
+    .pay__rate h4 {
+        margin-top: 30px;
+        font-size: 18px;
+        color: #FDFDFD;
+        line-height: 1;
+        margin-bottom: 30px;
+    }
+
 .pay__stars {
     display: flex;
     justify-content: space-between;
-
     margin-top: 50px;
 }
-.star img{
+
+.star img {
     width: 25px;
     height: 25px;
     object-fit: contain;
@@ -248,15 +248,10 @@ p {
     background-color: #c7c7c7;
     font-size: 16px;
     resize: none;
-
     border: 2px solid #1d38d1; /* Параметры рамки */
     width: 100%; /* Ширина */
     height: 200px; /* Высота */
 }
-
-
-
-
 
 .pay__send-cont {
     text-align: center;
@@ -265,11 +260,9 @@ p {
 
 .pay__send {
     display: inline-block;
-
-    padding: 10px 30px;  
+    padding: 10px 30px;
     border-radius: 20px;
     min-width: 300px;
-
     background-color: #30A8FF;
 }
 

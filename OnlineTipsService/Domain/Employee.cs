@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace OnlineTipsService.Domain;
+namespace ThankYouDB.Domain;
 
 public partial class Employee
 {
@@ -19,9 +19,9 @@ public partial class Employee
 
     public short MerchantId { get; set; }
 
-    public short Position { get; set; }
-
     public float EmployeeRating { get; set; }
+
+    public string Position { get; set; } = null!;
 
     public virtual Merchant Merchant { get; set; } = null!;
 

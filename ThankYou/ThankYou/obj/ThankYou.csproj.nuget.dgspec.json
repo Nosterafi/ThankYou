@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ThankYou\\ThankYou\\ThankYou.csproj": {}
+    "D:\\Онлайн-чаевые\\ThankYou\\ThankYou\\ThankYou\\ThankYou\\ThankYou.csproj": {}
   },
   "projects": {
-    "D:\\ThankYou\\ThankYou\\ThankYou.csproj": {
+    "D:\\Онлайн-чаевые\\ThankYou\\ThankYou\\ThankYou\\ThankYou\\ThankYou.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ThankYou\\ThankYou\\ThankYou.csproj",
+        "projectUniqueName": "D:\\Онлайн-чаевые\\ThankYou\\ThankYou\\ThankYou\\ThankYou\\ThankYou.csproj",
         "projectName": "ThankYou",
-        "projectPath": "D:\\ThankYou\\ThankYou\\ThankYou.csproj",
+        "projectPath": "D:\\Онлайн-чаевые\\ThankYou\\ThankYou\\ThankYou\\ThankYou\\ThankYou.csproj",
         "packagesPath": "C:\\Users\\Windows\\.nuget\\packages\\",
-        "outputPath": "D:\\ThankYou\\ThankYou\\obj\\",
+        "outputPath": "D:\\Онлайн-чаевые\\ThankYou\\ThankYou\\ThankYou\\ThankYou\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Windows\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,28 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

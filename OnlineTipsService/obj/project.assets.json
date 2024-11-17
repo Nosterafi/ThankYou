@@ -2153,9 +2153,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Онлайн-чаевые\\ThankYou\\ThankYou\\OnlineTipsService\\OnlineTipsService.csproj",
-      "projectName": "OnlineTipsService",
-      "projectPath": "D:\\Онлайн-чаевые\\ThankYou\\ThankYou\\OnlineTipsService\\OnlineTipsService.csproj",
+      "projectUniqueName": "D:\\Онлайн-чаевые\\ThankYou\\ThankYou\\OnlineTipsService\\ThankYouDB.csproj",
+      "projectName": "ThankYouDB",
+      "projectPath": "D:\\Онлайн-чаевые\\ThankYou\\ThankYou\\OnlineTipsService\\ThankYouDB.csproj",
       "packagesPath": "C:\\Users\\Windows\\.nuget\\packages\\",
       "outputPath": "D:\\Онлайн-чаевые\\ThankYou\\ThankYou\\OnlineTipsService\\obj\\",
       "projectStyle": "PackageReference",
@@ -2225,5 +2225,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Ошибка чтения файла кэша D:\\Онлайн-чаевые\\ThankYou\\ThankYou\\OnlineTipsService\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

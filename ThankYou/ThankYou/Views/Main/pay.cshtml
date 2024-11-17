@@ -29,8 +29,8 @@
                         <img src="~/images/pay/1de3dc07-8cb1-4122-a1e1-487a0d3e96ea.png" alt="image">
                     </div>
                     <div class="pay__info">
-                        <h4>Название заведения</h4>
-                        <p>Имя сотрудника</p>
+                        <h4>@Model.Employee.Merchant.Name</h4>
+                        <p>@Model.Employee.Name</p>
                         <p>4.9/5 <img src="~/images/pay/adsad.png" alt="icon"></p>
                     </div>
                 </div>
@@ -38,7 +38,9 @@
                 <div class="pay__selection">
                     <div class="pay__sum">
                         <div class="sum">
-                            <button>100р</button>
+                            <form method="post" action="/Main/SetSum">
+                                <button name="sum" value="100">100р</button>
+                            </form>
                         </div>
                         <div class="sum">
                             <button>600р</button>
@@ -52,7 +54,7 @@
                     </div>
 
                     <div class="pay__selfsum-cont">
-                        <button class="pay__selfsum">Ввести свою сумму</button>
+                        <input type="number" class="pay__selfsum" min="10" minlength="1" maxlength="10" placeholder="Ввести свою сумму"></input>
                     </div>
                 </div>
 

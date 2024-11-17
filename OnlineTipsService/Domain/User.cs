@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace OnlineTipsService.Domain;
+namespace ThankYouDB.Domain;
 
 public partial class User
 {

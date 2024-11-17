@@ -25,13 +25,15 @@
     <main class="main"> 
         <section class="welcome">
             <div class="container">
-                <h2 class="welcome__heading">Чаевые по QR-коду</h2>
-                <p  class="welcome__heading-text">Введите код сотрудника или отсканируйте QR-code:<p>
-                <input type="text" class="welcome__input-code" required minlength="6" maxlength="6">
-                <div class="welcome__links">
-                    <button type="submit" class="link-code">Отправить чаевые</button>
-                    <button class="link-primary">Подключить заведение</button>
-                </div>
+                <form method="post" action="/Main/PayPage">
+                    <h2 class="welcome__heading">Чаевые по QR-коду</h2>
+                    <p class="welcome__heading-text">Введите код сотрудника или отсканируйте QR-code:<p>
+                        <input type="number" class="welcome__input-code" name="employeeId" required min="0">
+                        <div class="welcome__links">
+                            <button type="submit" class="link-code">Отправить чаевые</button>
+                            <button class="link-primary">Подключить заведение</button>
+                        </div>
+                </form>
             </div>
         </section>
 
@@ -74,8 +76,8 @@
                 <div class="footer__collaboration">
                     <h4>Сотрудничетсво</h4>
                     <ul>
-                        <li><img src="~/images/main/image 21.png" alt="icon">@(321312)</li>
-                        <li><img src="~/images/main/image 22.png" alt="icon">@(321321)</li>
+                        <li><img src="~/images/main/image 21.png" alt="icon">@("@321312")</li>
+                        <li><img src="~/images/main/image 22.png" alt="icon">@("@321321")</li>
                         <li>123123123@mail.ru</li>
                     </ul>
                 </div>

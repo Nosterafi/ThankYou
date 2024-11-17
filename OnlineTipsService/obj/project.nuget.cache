@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pYzRW4rC0k0VVifKRlAU/4z5LmgraVQkQGtGS+T06SRYfXxzxxUKgeTM1vYTNnafHATLklMu4loi4QM5Ll4UAg==",
+  "dgSpecHash": "tNA0w9VyucMObyejqjVXNwbFSOY56YuPmsmc+X/wdGkjkBi7rp4GQR/lq2GnsNKauWziXYz16u1cU2Vk9xrRNQ==",
   "success": true,
-  "projectFilePath": "D:\\Онлайн-чаевые\\ThankYou\\ThankYou\\OnlineTipsService\\OnlineTipsService.csproj",
+  "projectFilePath": "D:\\Онлайн-чаевые\\ThankYou\\ThankYou\\OnlineTipsService\\ThankYouDB.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Windows\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Windows\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
@@ -44,5 +44,12 @@
     "C:\\Users\\Windows\\.nuget\\packages\\system.text.encoding.codepages\\6.0.0\\system.text.encoding.codepages.6.0.0.nupkg.sha512",
     "C:\\Users\\Windows\\.nuget\\packages\\system.threading.channels\\6.0.0\\system.threading.channels.6.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Ошибка чтения файла кэша D:\\Онлайн-чаевые\\ThankYou\\ThankYou\\OnlineTipsService\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
