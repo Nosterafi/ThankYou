@@ -23,6 +23,13 @@ p {
     display: none !important;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
 /*==================  HEADER ===================*/
 
 .header {
@@ -123,7 +130,6 @@ p {
 
 .pay__selection {
     font-size: 18px;
-    color: #0f0f0f;
 }
 
 .sum {
@@ -144,7 +150,9 @@ p {
     padding: 10px 30px;
     border-radius: 20px;
     min-width: 300px;
-    background-color: #0F0F0F !important;
+    background-color: #0F0F0F;
+    color: white;
+    border: 1px solid #FDFDFD;
 }
 
 /*================== PAYMENT METHOD ===================*/

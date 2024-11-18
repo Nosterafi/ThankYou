@@ -23,81 +23,82 @@
 
     <main class="main">
         <section class="pay">
-            <div class="container">
-                <div class="pay__heading">
-                    <div class="pay__ava">
-                        <img src="~/images/pay/1de3dc07-8cb1-4122-a1e1-487a0d3e96ea.png" alt="image">
-                    </div>
-                    <div class="pay__info">
-                        <h4>@Model.Employee.Merchant.Name</h4>
-                        <p>@Model.Employee.Name</p>
-                        <p>4.9/5 <img src="~/images/pay/adsad.png" alt="icon"></p>
-                    </div>
-                </div>
-
-                <div class="pay__selection">
-                    <div class="pay__sum">
-                        <div class="sum">
-                            <form method="post" action="/Main/SetSum">
-                                <button name="sum" value="100">100р</button>
-                            </form>
+            <form method="post" action="/Main/SendTip">
+                <div class="container">
+                    <div class="pay__heading">
+                        <div class="pay__ava">
+                            <img src="~/images/pay/1de3dc07-8cb1-4122-a1e1-487a0d3e96ea.png" alt="image">
                         </div>
-                        <div class="sum">
-                            <button>600р</button>
-                        </div>
-                        <div class="sum">
-                            <button>700р</button>
-                        </div>
-                        <div class="sum">
-                            <button>1000р</button>
+                        <div class="pay__info">
+                            <h4>@Model.Tip.Employee.Merchant.Name</h4>
+                            <p>@Model.Tip.Employee.Name</p>
+                            <p>@Model.Tip.Employee.EmployeeRating/5<img src="~/images/pay/adsad.png" alt="icon"></p>
                         </div>
                     </div>
 
-                    <div class="pay__selfsum-cont">
-                        <input type="number" class="pay__selfsum" min="10" minlength="1" maxlength="10" placeholder="Ввести свою сумму"></input>
-                    </div>
-                </div>
+                    <div class="pay__selection">
+                        <div class="pay__sum">
+                            <div class="sum">
+                                <button type="button" value="100" onclick="setSum(event)">100р</button>
+                            </div>
+                            <div class="sum">
+                                <button type="button" value="600" onclick="setSum(event)">600р</button>
+                            </div>
+                            <div class="sum">
+                                <button type="button" value="700" onclick="setSum(event)">700р</button>
+                            </div>
+                            <div class="sum">
+                                <button type="button" value="1000" onclick="setSum(event)">1000р</button>
+                            </div>
+                        </div>
 
-                <div class="pay__way">
-                    <h4>Выберете способ оплаты</h4>
-                    <div class="pay__way-select">
-                        <select class="select-css" name="way-payment" id="way-payment">
-                            <option value="spb">СПБ</option>
-                            <option value="card">Банковская карта</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="pay__rate">
-                    <h4>Оцените качество обслуживания</h4>
-                    <div class="pay__stars">
-                        <div class="star">
-                            <img src="~/images/pay/Vector (1).png" alt="icon">
-                        </div>
-                        <div class="star">
-                            <img src="~/images/pay/Vector (1).png" alt="icon">
-                        </div>
-                        <div class="star">
-                            <img src="~/images/pay/Vector (1).png" alt="icon">
-                        </div>
-                        <div class="star">
-                            <img src="~/images/pay/Vector (1).png" alt="icon">
-                        </div>
-                        <div class="star">
-                            <img src="~/images/pay/Vector (1).png" alt="icon">
+                        <div class="pay__selfsum-cont">
+                            <input type="number" class="pay__selfsum" name="Tip.Sum" min="10" minlength="1" maxlength="10" placeholder="Ввести свою сумму"/>
                         </div>
                     </div>
-                </div>
 
-                <div class="pay__feedback">
-                    <textarea class="" name="feedback" id="feedback"></textarea>
-                </div>
+                    <div class="pay__way">
+                        <h4>Выберете способ оплаты</h4>
+                        <div class="pay__way-select">
+                            <select class="select-css" name="PaymentMethod" id="way-payment">
+                                <option value="spb">СПБ</option>
+                                <option value="card">Банковская карта</option>
+                            </select>
+                        </div>
+                    </div>
 
-                <div class="pay__send-cont">
-                    <button class="pay__send">Отправить</button>
+                    <div class="pay__rate">
+                        <h4>Оцените качество обслуживания</h4>
+                        <div class="pay__stars">
+                            <div class="star">
+                                <img src="~/images/pay/Vector (1).png" alt="icon">
+                            </div>
+                            <div class="star">
+                                <img src="~/images/pay/Vector (1).png" alt="icon">
+                            </div>
+                            <div class="star">
+                                <img src="~/images/pay/Vector (1).png" alt="icon">
+                            </div>
+                            <div class="star">
+                                <img src="~/images/pay/Vector (1).png" alt="icon">
+                            </div>
+                            <div class="star">
+                                <img src="~/images/pay/Vector (1).png" alt="icon">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pay__feedback">
+                        <textarea class="" name="Tip.Review" id="feedback"></textarea>
+                    </div>
+
+                    <div class="pay__send-cont">
+                        <button type="submit" class="pay__send">Отправить</button>
+                    </div>
                 </div>
-            </div>
+            </form>
         </section>
     </main>
+    <script src="~/js/pay.js"></script>
 </body>
 </html>

@@ -85,6 +85,10 @@
       "PackagePath": "staticwebassets\\images\\pay\\adsad.png"
     },
     {
+      "Id": "D:\\Онлайн-чаевые\\ThankYou\\ThankYou\\ThankYou\\ThankYou\\wwwroot\\js\\pay.js",
+      "PackagePath": "staticwebassets\\js\\pay.js"
+    },
+    {
       "Id": "D:\\Онлайн-чаевые\\ThankYou\\ThankYou\\ThankYou\\ThankYou\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

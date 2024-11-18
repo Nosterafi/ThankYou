@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0/NlketjMmxNYSaJBhY8GluccLL/aX976J0DdqIzZgY=",
+  "Hash": "Xmjty06JoQHKbHOgabM4eFjT7MVoDQZ+V1kbIMtF+20=",
   "Source": "ThankYou",
   "BasePath": "_content/ThankYou",
   "Mode": "Default",
@@ -414,6 +414,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\pay\\Vector.png"
+    },
+    {
+      "Identity": "D:\\Онлайн-чаевые\\ThankYou\\ThankYou\\ThankYou\\ThankYou\\wwwroot\\js\\pay.js",
+      "SourceId": "ThankYou",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Онлайн-чаевые\\ThankYou\\ThankYou\\ThankYou\\ThankYou\\wwwroot\\",
+      "BasePath": "_content/ThankYou",
+      "RelativePath": "js/pay.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\pay.js"
     },
     {
       "Identity": "D:\\Онлайн-чаевые\\ThankYou\\ThankYou\\ThankYou\\ThankYou\\wwwroot\\js\\site.js",

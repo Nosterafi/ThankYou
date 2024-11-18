@@ -3,16 +3,15 @@ using System.Diagnostics;
 using ThankYou.Models;
 using ThankYou.DB.Context;
 using ThankYou.DB.Domain;
+using ThankYou.ViewModels;
 
 namespace ThankYou.Controllers
 {
     public class MainController : Controller
     {
+        private static readonly PostgresContext _postgresContext = new();
+
         private readonly ILogger<MainController> _logger;
-
-        private readonly PostgresContext _postgresContext = new();
-
-        private Tip tip;
 
         public Employee Employee { get; set; }
 
@@ -28,26 +27,22 @@ namespace ThankYou.Controllers
             var employee = _postgresContext.Employees.Find(employeeId);
             employee.Merchant = _postgresContext.Merchants.Find(employee.MerchantId);
 
-            tip = new Tip();
+            var tip = new Tip();
             tip.Employee = employee;
-            tip.EmployeeId = employeeId;
 
-            return View("pay", tip);
+            return View("pay", new PayViewModel(tip));
         }
 
         [HttpPost]
-        public IActionResult SetSum(short sum) 
-        { 
-            tip.Sum = sum;
+        public IActionResult SendTip(PayViewModel viewModel) 
+        {
+            viewModel.Tip.Employee = employee;
+            
+            _postgresContext.Tips.Add(viewModel.Tip);
+            _postgresContext.SaveChanges();
 
-            return RedirectToAction("PayPage", tip.EmployeeId);
+            return RedirectToAction("MainPage");
         }
-
-        public IActionResult PayErrorPage() { return View("payError"); }
-
-        public IActionResult PayNotenoughPage() { return View("payNotenough"); }
-
-        public IActionResult PaySuccesPage() { return View("paySucces"); }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
