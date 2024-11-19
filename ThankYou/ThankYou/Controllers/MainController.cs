@@ -28,7 +28,6 @@ namespace ThankYou.Controllers
             return MainPage(employeeId);
         }
 
-        [HttpPost]
         public IActionResult MainPage(short employeeId = -1) { return View("main", employeeId); }
 
         [HttpPost]
