@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 
 namespace ThankYou.DB.Domain;
@@ -21,5 +22,6 @@ public partial class Tip
 
     public virtual Client? Client { get; set; }
 
+    [JsonIgnore]
     public virtual Employee Employee { get; set; } = null!;
 }

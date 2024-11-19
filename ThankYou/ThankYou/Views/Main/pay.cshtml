@@ -32,8 +32,7 @@
                         <div class="pay__info">
                             <h4>@Model.Tip.Employee.Merchant.Name</h4>
                             <p>@Model.Tip.Employee.Name</p>
-                            <p>Код сотрудника</p>
-                            <p>@Model.Tip.Employee.EmployeeRating/5<img src="~/images/pay/adsad.png" alt="icon"></p>
+                            <p>@Math.Round(Model.Tip.Employee.EmployeeRating, 2)/5<img src="~/images/pay/adsad.png" alt="icon"></p>
                         </div>
                     </div>
 
@@ -54,7 +53,7 @@
                         </div>
 
                         <div class="pay__selfsum-cont">
-                            <input type="number" class="pay__selfsum" name="Tip.Sum" min="10" minlength="1" maxlength="10" placeholder="Ввести свою сумму"/>
+                            <input type="number" class="pay__selfsum" name="Tip.Sum" min="10" minlength="1" max="65500" placeholder="Ввести свою сумму" required/>
                         </div>
                     </div>
 
@@ -70,8 +69,8 @@
 
                     <div class="pay__rate">
                         <label class="rate-label">Оцените качество обслуживания</label>
-                        <select class="select-rate" name="user_rate" id="user_rate">
-                            <option value label=" "></option>
+                        <select class="select-rate" name="Tip.Grade" id="user_rate" required>
+                            <option label=" "></option>
                             <option value="1">1 Ужасно</option>
                             <option value="2">2 Плохо</option>
                             <option value="3">3 Более-менее</option>
