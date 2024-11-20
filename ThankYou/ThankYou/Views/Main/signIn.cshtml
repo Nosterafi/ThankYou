@@ -33,6 +33,17 @@
                 <input type="password" placeholder="Введите пароль" name="password" required>
 
                 <button type="submit" class="registerbtn">Войти</button>
+
+                @if (!ViewData.ModelState.IsValid)
+                {
+                    <div class="alert alert-danger">
+                        @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                        {
+                            <p style="color:red;">@error.ErrorMessage</p>
+                        }
+                    </div>
+                }
+
             </div>
             <div class="container signin">
                 <p>Нет подключенного заведения? <a href="#!">Подключить заведение</a>.</p>

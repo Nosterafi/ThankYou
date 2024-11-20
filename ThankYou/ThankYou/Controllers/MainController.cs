@@ -99,7 +99,7 @@ namespace ThankYou.Controllers
             {
                 // Если пользователь не найден, возвращаем сообщение об ошибке
                 ModelState.AddModelError(string.Empty, "Неверный логин или пароль.");
-                return View(); // Возвращаем текущее представление с ошибкой
+                return View("signIn"); // Возвращаем текущее представление с ошибкой
             }
         }
 
