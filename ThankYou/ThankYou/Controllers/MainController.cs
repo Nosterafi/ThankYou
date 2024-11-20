@@ -4,9 +4,6 @@ using ThankYou.Models;
 using ThankYou.DB.Context;
 using ThankYou.DB.Domain;
 using ThankYou.ViewModels;
-using Microsoft.AspNetCore.Mvc.ViewFeatures;
-using Microsoft.AspNetCore.Http;
-using Microsoft.EntityFrameworkCore.Storage.Json;
 using Newtonsoft.Json;
 
 namespace ThankYou.Controllers
@@ -70,6 +67,34 @@ namespace ThankYou.Controllers
             _postgresContext = new();
 
             return View("PaySucces");
+        }
+
+
+        public ActionResult SignUp()
+        {
+            throw new NotImplementedException();
+            return View("signUp");
+        }
+
+        [HttpPost]
+        public ActionResult SignIn()
+        {
+            return View("signIn");
+        }
+
+        public IActionResult Employee(short employeeId)
+        {
+            var employee = _postgresContext.Employees.Find(employeeId);
+
+            if (employee == null)
+            {
+                HttpContext.Session.SetString("invEmpFlag","true");
+                return RedirectToAction("MainPage");
+            }
+
+            employee.Merchant = _postgresContext.Merchants.Find(employee.MerchantId);
+
+            return View("EmployPage");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -2193,19 +2193,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Windows\\.nuget\\packages\\": {}
+    "C:\\Users\\IceGod\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Онлайн-чаевые\\ThankYou\\ThankYou\\ThankYou\\ThankYou\\ThankYou.csproj",
+      "projectUniqueName": "D:\\Projects\\Repository\\ThankYou\\ThankYou\\ThankYou\\ThankYou.csproj",
       "projectName": "ThankYou",
-      "projectPath": "D:\\Онлайн-чаевые\\ThankYou\\ThankYou\\ThankYou\\ThankYou\\ThankYou.csproj",
-      "packagesPath": "C:\\Users\\Windows\\.nuget\\packages\\",
-      "outputPath": "D:\\Онлайн-чаевые\\ThankYou\\ThankYou\\ThankYou\\ThankYou\\obj\\",
+      "projectPath": "D:\\Projects\\Repository\\ThankYou\\ThankYou\\ThankYou\\ThankYou.csproj",
+      "packagesPath": "C:\\Users\\IceGod\\.nuget\\packages\\",
+      "outputPath": "D:\\Projects\\Repository\\ThankYou\\ThankYou\\ThankYou\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Windows\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\IceGod\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2213,6 +2213,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2225,6 +2226,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -2275,7 +2281,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

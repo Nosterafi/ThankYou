@@ -9,47 +9,55 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ThankYou
 build_property.RootNamespace = ThankYou
-build_property.ProjectDir = D:\Онлайн-чаевые\ThankYou\ThankYou\ThankYou\ThankYou\
+build_property.ProjectDir = D:\Projects\Repository\ThankYou\ThankYou\ThankYou\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Онлайн-чаевые\ThankYou\ThankYou\ThankYou\ThankYou
+build_property.MSBuildProjectDirectory = D:\Projects\Repository\ThankYou\ThankYou\ThankYou
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Онлайн-чаевые/ThankYou/ThankYou/ThankYou/ThankYou/Views/Main/main.cshtml]
+[D:/Projects/Repository/ThankYou/ThankYou/ThankYou/wwwroot/css/main/signIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = d3d3cm9vdFxjc3NcbWFpblxzaWduSW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Repository/ThankYou/ThankYou/ThankYou/Views/Main/main.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpblxtYWluLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Онлайн-чаевые/ThankYou/ThankYou/ThankYou/ThankYou/Views/Main/pay.cshtml]
+[D:/Projects/Repository/ThankYou/ThankYou/ThankYou/Views/Main/pay.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpblxwYXkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Онлайн-чаевые/ThankYou/ThankYou/ThankYou/ThankYou/Views/Main/payError.cshtml]
+[D:/Projects/Repository/ThankYou/ThankYou/ThankYou/Views/Main/payError.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpblxwYXlFcnJvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Онлайн-чаевые/ThankYou/ThankYou/ThankYou/ThankYou/Views/Main/payNotenough.cshtml]
+[D:/Projects/Repository/ThankYou/ThankYou/ThankYou/Views/Main/payNotenough.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpblxwYXlOb3Rlbm91Z2guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Онлайн-чаевые/ThankYou/ThankYou/ThankYou/ThankYou/Views/Main/paySucces.cshtml]
+[D:/Projects/Repository/ThankYou/ThankYou/ThankYou/Views/Main/paySucces.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpblxwYXlTdWNjZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Онлайн-чаевые/ThankYou/ThankYou/ThankYou/ThankYou/Views/Shared/Error.cshtml]
+[D:/Projects/Repository/ThankYou/ThankYou/ThankYou/Views/Main/signIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpblxzaWduSW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Repository/ThankYou/ThankYou/ThankYou/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Онлайн-чаевые/ThankYou/ThankYou/ThankYou/ThankYou/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Projects/Repository/ThankYou/ThankYou/ThankYou/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Онлайн-чаевые/ThankYou/ThankYou/ThankYou/ThankYou/Views/_ViewImports.cshtml]
+[D:/Projects/Repository/ThankYou/ThankYou/ThankYou/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Онлайн-чаевые/ThankYou/ThankYou/ThankYou/ThankYou/Views/_ViewStart.cshtml]
+[D:/Projects/Repository/ThankYou/ThankYou/ThankYou/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
