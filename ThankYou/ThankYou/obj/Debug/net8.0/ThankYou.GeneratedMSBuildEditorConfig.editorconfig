@@ -18,8 +18,8 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Projects\Repository\ThankYou\ThankYou\ThankYou
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Projects/Repository/ThankYou/ThankYou/ThankYou/wwwroot/css/main/signIn.cshtml]
-build_metadata.AdditionalFiles.TargetPath = d3d3cm9vdFxjc3NcbWFpblxzaWduSW4uY3NodG1s
+[D:/Projects/Repository/ThankYou/ThankYou/ThankYou/Views/Main/EmployeeProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpblxFbXBsb3llZVByb2ZpbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Projects/Repository/ThankYou/ThankYou/ThankYou/Views/Main/main.cshtml]

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "zora1fXkRcqXvXOXdTCZwcdwe10RmZv5DDyG6+HcqlE=",
+  "Hash": "9427pyUuVrlsoFb0r7VSls5pcSe8fmscc4hJ4IzkW5A=",
   "Source": "ThankYou",
   "BasePath": "_content/ThankYou",
   "Mode": "Default",
@@ -34,25 +34,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\main\\reset.css"
-    },
-    {
-      "Identity": "D:\\Projects\\Repository\\ThankYou\\ThankYou\\ThankYou\\wwwroot\\css\\main\\signIn.cshtml",
-      "SourceId": "ThankYou",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\Repository\\ThankYou\\ThankYou\\ThankYou\\wwwroot\\",
-      "BasePath": "_content/ThankYou",
-      "RelativePath": "css/main/signIn.cshtml",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "wwwroot\\css\\main\\signIn.cshtml"
     },
     {
       "Identity": "D:\\Projects\\Repository\\ThankYou\\ThankYou\\ThankYou\\wwwroot\\css\\main\\style.css",

@@ -69,7 +69,7 @@ namespace ThankYou.Controllers
             return View("PaySucces");
         }
 
-
+        [HttpPost]
         public ActionResult SignUp()
         {
             throw new NotImplementedException();
@@ -82,7 +82,37 @@ namespace ThankYou.Controllers
             return View("signIn");
         }
 
-        public IActionResult Employee(short employeeId)
+        [HttpPost]
+        public IActionResult Employee(string phoneNumber, string password)
+        {
+            // ѕроверка наличи€ пользовател€ в базе данных
+            // Ќеобходимо как то различать роли пользователей у нас есть сотрудники, а есть клиенты, а еще как бы же есть заведени€
+            var user = _postgresContext.Users
+                .FirstOrDefault(u => u.PhoneNumber == phoneNumber && u.Password == password); 
+
+            if (user != null)
+            {
+                // ≈сли пользователь найден, перенаправл€ем на страницу профил€, передава€ id дл€ поиска информации о нем
+                return RedirectToAction("EmployeeProfile", new { id = user.Id});
+            }
+            else
+            {
+                // ≈сли пользователь не найден, возвращаем сообщение об ошибке
+                ModelState.AddModelError(string.Empty, "Ќеверный логин или пароль.");
+                return View(); // ¬озвращаем текущее представление с ошибкой
+            }
+        }
+
+        public IActionResult EmployeeProfile(short id)
+        {
+            var employee = _postgresContext.Employees.Find(id);
+            employee.Merchant = _postgresContext.Merchants.Find(employee.MerchantId);
+
+            return View("EmployeeProfile", employee);
+        }
+
+        [HttpPost]
+        public IActionResult FindEmployee(short employeeId)
         {
             var employee = _postgresContext.Employees.Find(employeeId);
 
