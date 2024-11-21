@@ -29,25 +29,5 @@ internal class Program
         app.MapControllerRoute(
             name: "default",
             pattern: "{controller=Main}/{action=Index}/{employeeId?}");
-
-        app.MapControllerRoute(
-            name: "main",
-            pattern: "{controller=Main}/{action=}/{id?}");
-
-        app.MapControllerRoute(
-            name: "pay",
-            pattern: "{controller=Main}/{action=PayPage}/{id?}");
-
-        app.MapControllerRoute(
-            name: "payError",
-            pattern: "{controller=Main}/{action=PayErrorPage}/{id?}");
-
-        app.MapControllerRoute(
-            name: "payNotenough",
-            pattern: "{controller=Main}/{action=PayNotenoughPage}/{id?}");
-
-        app.MapControllerRoute(
-            name: "paySucces",
-            pattern: "{controller=Main}/{action=PaySuccesPage}/{id?}");
     }
 }
