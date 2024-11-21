@@ -30,11 +30,23 @@ public partial class Employee
 
     public virtual ICollection<Tip> Tips { get; set; } = new List<Tip>();
 
-    public Image GetQRcode()
+    public string GetQRcode
     {
-        var adress = "http://localhost:7116/Main/Index/";
-        var img = new QRCodeEncoder().Encode(adress + this.Id);
+        get
+        {
+            var adress = "http://localhost:7116/Main/Index/";
+            Bitmap bitmap = new QRCodeEncoder().Encode(adress + this.Id);
+            byte[] imageBytes;
 
-        return img;
+            using (var ms = new MemoryStream())
+            {
+                bitmap.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
+                imageBytes = ms.ToArray();
+            }
+
+
+            return Convert.ToBase64String(imageBytes);
+        }
     }
+
 }

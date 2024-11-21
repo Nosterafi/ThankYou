@@ -47,14 +47,14 @@
             <div class="menu">
                 <button class="qr" type="button" onclick="window.qr.showModal()">
                     <div class="qrcode-button">
-                        <img src="img/qr-code-line.png" alt="icon">
+                        <img src="~/images/main/touchscreen 1.png" alt="icon">
                     </div>
                 </button>
             </div>
         </div>
 
         <dialog id="qr">
-            Здарова отец
+            <img src=@Model.GetQRcode>
         </dialog>
 
     </main>
@@ -90,5 +90,18 @@
             </div>
         </div>
     </footer>
+
+
+    <script>
+        function showQRCode() {
+            const qrDialog = document.getElementById('qr');
+            qrDialog.showModal(); // Открыть диалог
+        }
+
+        document.getElementById('closeQr').onclick = function () {
+            const qrDialog = document.getElementById('qr');
+            qrDialog.close(); // Закрыть диалог
+        };
+    </script>
 </body>
 </html>
