@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ThankU</title>
+  <link rel="stylesheet" href="reset.css"> 
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+  <header class="header">
+    <div class="container  header__container">
+        <h1 class="logo">ThankU</h1>
+        <nav class="header__nav">
+            <ul>
+                <li><a href="#!">Поддержка</a></li>
+                <li><a href="#!">FAQ</a></li>
+                <li><a href="#!">Профиль</a></li>
+            </ul>
+        </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <div class="heading">
+        <div class="ava">
+          <img src="img/1de3dc07-8cb1-4122-a1e1-487a0d3e96ea.png" alt="image">
+        </div>
+      </div>
+
+      <div class="info">
+        <p>Фамилия</p>
+        <p>============</p>
+        <p>Имя</p>
+        <p>============</p>
+        <p>Название заведения</p>
+        <p>============</p>
+        <p>Рейтинг</p>
+        <p>============</p>
+        <p>Должность</p>
+        <p>============</p>
+      </div>
+
+      <div class="menu">
+        <button id="qr" class="qr" type="button" onclick="openModal();">
+          <div class="qrcode-button">
+            <img src="img/qr-code-line.png" alt="icon">
+          </div>
+        </button>
+
+        <dialog id="favDialog">
+          <div class="modal">
+            <div class="modal-content">
+              <menu>
+                <button class="cancel" id="cancel" type="reset">&times</button>
+              </menu>
+            </div>
+          </div>
+        </dialog>
+        
+        
+      </div>
+
+      
+    </div>
+  </main>
+
+  <script>
+    (function () {
+        var updateButton =
+            document.getElementById('qr');
+        var cancelButton =
+            document.getElementById('cancel');
+        var favDialog =
+            document.getElementById('favDialog');
+
+        // Update button opens a modal dialog
+        updateButton.addEventListener('click', function () {
+            favDialog.showModal();
+        });
+
+        // Form cancel button closes the dialog box
+        cancelButton.addEventListener('click', function () {
+            favDialog.close();
+        });
+    })();
+  </script>
+</body>
+</html>
