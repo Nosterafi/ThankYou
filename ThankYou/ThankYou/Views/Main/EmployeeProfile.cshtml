@@ -25,35 +25,70 @@
         <div class="container">
             <div class="heading">
                 <div class="ava">
-                    <img src="~/images/pay/adsad.png" alt="image">
+                    <img src="~/images/pay/1de3dc07-8cb1-4122-a1e1-487a0d3e96ea.png" alt="image">
                 </div>
             </div>
 
             <div class="info">
                 <p>Фамилия</p>
-                <p>============</p>
+                <p>@Model.Surname</p>
                 <p>Имя</p>
-                <p>============</p>
+                <p>@Model.Name</p>
+                <p>Отчество</p>
+                <p>@Model.Patronymic</p>
                 <p>Название заведения</p>
-                <p>============</p>
+                <p>@Model.Merchant.Name</p>
                 <p>Рейтинг</p>
-                <p>============</p>
+                <p>@Model.EmployeeRating</p>
                 <p>Должность</p>
-                <p>============</p>
+                <p>@Model.Position</p>
             </div>
 
             <div class="menu">
-                <button class="qr" type="button" onclick="window.qr.show()">
+                <button class="qr" type="button" onclick="window.qr.showModal()">
                     <div class="qrcode-button">
                         <img src="img/qr-code-line.png" alt="icon">
                     </div>
                 </button>
             </div>
-
-            <dialog id="qr">
-
-            </dialog>
         </div>
+
+        <dialog id="qr">
+            Здарова отец
+        </dialog>
+
     </main>
+
+    <footer class="footer">
+        <div class="footer__desc">
+            <div class="container footer__desc-container">
+                <div class="footer__support">
+                    <h4>Техподдержка</h4>
+                    <ul>
+                        <li><img src="~/images/main/image 21.png" alt="icon">Написать в Телеграм</li>
+                        <li><img src="~/images/main/image 22.png" alt="icon">Написать в ВК</li>
+                        <li>Написать на почту</li>
+                    </ul>
+                </div>
+                <div class="footer__collaboration">
+                    <h4>Сотрудничетсво</h4>
+                    <ul>
+                        <li><img src="~/images/main/image 21.png" alt="icon">@("@321312")</li>
+                        <li><img src="~/images/main/image 22.png" alt="icon">@("@321321")</li>
+                        <li>123123123@mail.ru</li>
+                    </ul>
+                </div>
+                <div class="footer__answer">
+                    <h4>Ответы на вопросы</h4>
+                    <ul>
+                        <li>Как оплатить чаевые по QR-коду?</li>
+                        <li>Как отсканировать QR-код?</li>
+                        <li>Какие есть сопособы оплаты?</li>
+                        <li>Где можно отсканировать QR-код?</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
