@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Регистрация</title>
-    <link rel="stylesheet" href="~/css/signIn/reset.css">
-    <link rel="stylesheet" href="~/css/signIn/style.css">
+    <title>ThankU</title>
+    <link rel="stylesheet" href="~/css/employee/reset.css">
+    <link rel="stylesheet" href="~/css/employee/style.css">
 </head>
-
 <body>
     <header class="header">
         <div class="container  header__container">
@@ -23,21 +22,38 @@
     </header>
 
     <main class="main">
-        <form method="post" action="/Main/Employee">
-            <div class="container">
-                <h1>Вход</h1>
-
-                <label for="phoneNumber"><b>Логин</b></label>
-                <input type="text" placeholder="Введите номер телофона" name="phoneNumber" required min="0">
-                <label for="password"><b>Пароль</b></label>
-                <input type="password" placeholder="Введите пароль" name="password" required>
-
-                <button type="submit" class="registerbtn">Войти</button>
+        <div class="container">
+            <div class="heading">
+                <div class="ava">
+                    <img src="~/images/pay/adsad.png" alt="image">
+                </div>
             </div>
-            <div class="container signin">
-                <p>Нет подключенного заведения? <a href="#!">Подключить заведение</a>.</p>
+
+            <div class="info">
+                <p>Фамилия</p>
+                <p>============</p>
+                <p>Имя</p>
+                <p>============</p>
+                <p>Название заведения</p>
+                <p>============</p>
+                <p>Рейтинг</p>
+                <p>============</p>
+                <p>Должность</p>
+                <p>============</p>
             </div>
-        </form>
+
+            <div class="menu">
+                <button class="qr" type="button" onclick="window.qr.show()">
+                    <div class="qrcode-button">
+                        <img src="img/qr-code-line.png" alt="icon">
+                    </div>
+                </button>
+            </div>
+
+            <dialog id="qr">
+
+            </dialog>
+        </div>
     </main>
 </body>
 </html>

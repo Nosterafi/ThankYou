@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Murecho:wght@100..900&display=swap');
+
+/*================== Общие стили ==========================*/
+
+body {
+    font-family: "Murecho", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 670px;
+    padding: 0 15px;
+    margin:  0 auto;
+}
+
+p {
+    color: #FDFDFD;
+    line-height: 1.8;
+}
+
+.hide {
+    display: none !important;
+}
+
+/*==================  HEADER ===================*/
+
+.header { 
+    padding: 12px 0;
+    background-color: #30A8FF;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    letter-spacing: 4px;
+
+    color: black;
+}
+
+.header__nav ul {
+    display: flex;
+} 
+
+.header__nav li + li {
+    margin-left: 40px;
+}
+
+.header__nav a {
+    font-size: 16px;
+    color: #000000;
+    transition: color 0.2s;
+}
+
+.header__nav a:hover {
+    color: #0E20E7;
+}
+
+.header__nav a:active {
+    color: #0F1DB2;
+}
+
+/*================== MAIN ====================*/
+
+.main {
+    background-color: #191919;
+    padding: 100px 0;
+    height: 100vh;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=text], input[type=password], input[type=number] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #30A8FF;
+    border-radius: 10px;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=number]:focus  {
+    background-color: #30A8FF;
+    outline: none;
+}
+/*================== INFO ====================*/
+
+.heading {
+    font-size: 18px;
+    color: #FDFDFD;
+
+    display: flex;
+    justify-content: center;
+}
+
+.info {
+    background-color: #30A8FF;
+    font-size: 18px;
+
+    padding: 50px 30px;
+    border-radius: 10px;
+}
+
+.info p {
+    color: #000000;
+    line-height: 1;
+}
+
+.ava img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.qrcode-button {
+    padding: 10px 30px;  
+    border-radius: 20px;
+
+    background-color: #30A8FF;
+}
+
+
+@media (max-width: 400px) {
+    .header__nav li + li {
+        margin-left: 5px;
+    }
+}
