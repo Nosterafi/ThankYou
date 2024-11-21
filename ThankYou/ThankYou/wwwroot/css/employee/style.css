@@ -69,9 +69,8 @@ p {
 
 .main {
     background-color: #191919;
-    padding: 100px 0;
+    padding: 150px 0;
 }
-
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -126,16 +125,74 @@ input[type=text]:focus, input[type=password]:focus, input[type=number]:focus  {
 .menu {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .qrcode-button {
+
     padding: 10px 30px;  
     border-radius: 20px;
 
     background-color: #30A8FF;
 }
 
+.gen-qr {
+    margin: 10px;
+	background: lightblue;
+	border: none;
+	border-radius: 1rem;
+}
+
+
+
+
+/* формируем фон для модального окна */
+.modal {
+    /* темный фон при открытии модалки должен быть на всю страницу */
+    text-align: center;
+    position: fixed; 
+    z-index: 1; /* поверх всех элементов */
+    left: 0;
+    top: 0;
+    width: 100vw; /* полная ширина */
+    height: 100vh; /* полная высота */
+    background-color: rgba(0,0,0,0.4); /* цвет фона - прозрачный черный */
+}
+  /* само модальное окно с контентом */
+.modal-content {
+    border-radius: 10px;
+    background-color: #3b3b3b;
+    /* окно будет находится по центру по горизонтали и с отступом сверху в 100 px */
+    margin: 100px auto; 
+    padding: 20px;
+    width: 50%; 
+    font-size: 20px;
+}
+
+.modal-content menu{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.modal img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+.modal-content, .modal{
+    color: #FDFDFD;
+}
+
+.cancel {
+    padding: 10px 30px;  
+    border-radius: 20px;
+
+    background-color: #30A8FF;
+}
 
 @media (max-width: 400px) {
     .header__nav li + li {

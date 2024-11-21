@@ -87,7 +87,8 @@ namespace ThankYou.Controllers
         {
             // ѕроверка наличи€ пользовател€ в базе данных
             // Ќеобходимо как то различать роли пользователей у нас есть сотрудники, а есть клиенты, а еще как бы же есть заведени€
-            var user = _postgresContext.Users
+            // ѕока что во избежании ошибок ишем пользователей только в сотрудниках. ¬ременное решение 
+            var user = _postgresContext.Employees
                 .FirstOrDefault(u => u.PhoneNumber == phoneNumber && u.Password == password); 
 
             if (user != null)

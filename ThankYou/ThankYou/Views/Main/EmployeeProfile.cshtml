@@ -45,30 +45,51 @@
             </div>
 
             <div class="menu">
-                <button class="qr" type="button" onclick="window.qr.showModal()">
+                <button id = "qr" class="qr" type="button" onclick="window.qr.showModal()">
                     <div class="qrcode-button">
-                        <img src="~/images/main/touchscreen 1.png" alt="icon">
+                        <img src="~/images/employee/qr-code-line.png" alt="icon">
                     </div>
                 </button>
+
+                <dialog id="favDialog">
+                    <div class="modal">
+                        <div class="modal-content">
+                            <div>
+                                <img src="data:image/png;base64,@Model.GetQRcode" alt="QR-код">
+                            </div>
+                            <menu>
+                                <button class="cancel" id="cancel" type="reset">&times</button>
+                            </menu>
+                        </div>
+                    </div>
+                </dialog>
+
             </div>
+
+
+
         </div>
-
-        <dialog id="qr">
-            <img src="data:image/png;base64,@Model.GetQRcode" alt="QR-код">
-        </dialog>
-
     </main>
 
     <script>
-        function showQRCode() {
-            const qrDialog = document.getElementById('qr');
-            qrDialog.showModal(); // Открыть диалог
-        }
+        (function () {
+            var updateButton =
+                document.getElementById('qr');
+            var cancelButton =
+                document.getElementById('cancel');
+            var favDialog =
+                document.getElementById('favDialog');
 
-        document.getElementById('closeQr').onclick = function () {
-            const qrDialog = document.getElementById('qr');
-            qrDialog.close(); // Закрыть диалог
-        };
+            // Update button opens a modal dialog
+            updateButton.addEventListener('click', function () {
+                favDialog.showModal();
+            });
+
+            // Form cancel button closes the dialog box
+            cancelButton.addEventListener('click', function () {
+                favDialog.close();
+            });
+        })();
     </script>
 </body>
 </html>
