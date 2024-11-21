@@ -30,6 +30,7 @@
           </div>
           <div class="pay__info">
             <h4>Название заведения</h4>
+            <p>Код сотрудника</p>
             <p>Имя сотрудника</p>
             <p>4.9/5 <img src="img/adsad.png" alt="icon"></p>
           </div>
@@ -41,18 +42,21 @@
               <button>100р</button>
             </div>
             <div class="sum">
-              <button>600р</button>
+              <button>300р</button>
             </div>
             <div class="sum">
               <button>700р</button>
             </div>
-            <div class="sum">
-              <button>1000р</button>
-            </div>
+            <button>
+              <div class="sum">
+                1000р
+              </div>
+            </button>
+            
           </div>
 
           <div class="pay__selfsum-cont">
-            <button class="pay__selfsum">Ввести свою сумму</button>
+            <input type="number" class="pay__selfsum" min="10" minlength="1" maxlength="10" placeholder="Ввести свою сумму"></input>
           </div>
         </div>
 
@@ -67,27 +71,19 @@
         </div>
 
         <div class="pay__rate">
-          <h4>Оцените качество обслуживания</h4>
-          <div class="pay__stars">
-            <div class="star">
-              <img src="img/Vector (1).png" alt="icon">
-            </div>
-            <div class="star">
-              <img src="img/Vector (1).png" alt="icon">
-            </div>
-            <div class="star">
-              <img src="img/Vector (1).png" alt="icon">
-            </div>
-            <div class="star">
-              <img src="img/Vector (1).png" alt="icon">
-            </div>
-            <div class="star">
-              <img src="img/Vector (1).png" alt="icon">
-            </div>
-          </div>
+          <label class="rate-label">Оцените качество обслуживания</label>
+          <select class="select-rate" name="user_rate" id="user_rate">
+            <option value label=" "></option>
+            <option value="1">1 Ужасно</option>
+            <option value="2">2 Плохо</option>
+            <option value="3">3 Более-менее</option>
+            <option value="4">4 Хорошо</option>
+            <option value="5">5 Великолепно</option>
+          </select>
         </div>
-
+        
         <div class="pay__feedback">
+          <label class="feedback-label">Оставте отзыв</label>
           <textarea class="" name="feedback" id="feedback"></textarea>
         </div>
 

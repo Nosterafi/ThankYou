@@ -65,54 +65,70 @@ p {
     color: #0F1DB2;
 }
 
-/*================== MAIN ===================*/
+/*================== MAIN ====================*/
 
 .main {
     background-color: #191919;
-    height: 100vh;
-
     padding: 150px 0;
-
-    text-align: center;
 }
 
-.error img {
-    width: 250px;
-    height: 250px;
-    object-fit: contain;
+/*================== INFO ====================*/
 
-    margin-bottom: 40px;
-}
-
-.main h1 {
-    font-size: 30px;
-    color: #FDFDFD;
-    text-align: center;
-    line-height: 1;
-    margin-bottom: 100px;
-}
-
-.main p {
+.heading {
     font-size: 18px;
-    line-height: 2;
-    padding: 0 20px;
-    text-align: center;
+    color: #FDFDFD;
+
+    display: flex;
+    justify-content: center;
 }
 
-.main a {
-    color: #3c4bda;
-    transition: color 0.2s;
+.info {
+    background-color: #30A8FF;
+    font-size: 18px;
+
+    padding: 50px 30px;
+    border-radius: 10px;
 }
 
-.main a:active {
-    color: #0F1DB2;
+.info p {
+    color: #191919;
+    line-height: 1;
 }
 
-.main a:hover {
-    color: #1324e2;
+.ava img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
 }
 
+.buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
 
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.buttons p {
+  color: #191919;
+}
+
+.emp-button {
+    margin-top: 20px;
+    padding: 10px 30px;  
+    border-radius: 20px;
+
+    background-color: #30A8FF;
+}
+
+.menu-button {
+  margin-top: 20px;
+  padding: 10px 30px;  
+  border-radius: 20px;
+
+  background-color: #30A8FF;
+}
 
 @media (max-width: 400px) {
     .header__nav li + li {

@@ -43,17 +43,46 @@
       </div>
 
       <div class="menu">
-        <button class="qr" type="button" onclick="window.qr.show()">
+        <button id="qr" class="qr" type="button" onclick="openModal();">
           <div class="qrcode-button">
             <img src="img/qr-code-line.png" alt="icon">
           </div>
         </button>
+
+        <dialog id="favDialog">
+          <div class="modal">
+            <div class="modal-content">
+              <menu>
+                <button class="cancel" id="cancel" type="reset">&times</button>
+              </menu>
+            </div>
+          </div>
+        </dialog>
       </div>
 
-      <dialog id="qr">
-        
-      </dialog>
+      
     </div>
   </main>
+
+  <script>
+    (function () {
+        var updateButton =
+            document.getElementById('qr');
+        var cancelButton =
+            document.getElementById('cancel');
+        var favDialog =
+            document.getElementById('favDialog');
+
+        // Update button opens a modal dialog
+        updateButton.addEventListener('click', function () {
+            favDialog.showModal();
+        });
+
+        // Form cancel button closes the dialog box
+        cancelButton.addEventListener('click', function () {
+            favDialog.close();
+        });
+    })();
+  </script>
 </body>
 </html>
