@@ -1,6 +1,6 @@
-﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
+﻿using System;
+using MessagingToolkit.QRCode.Codec;
+using System.Drawing;
 
 namespace ThankYou.DB.Domain;
 
@@ -29,4 +29,12 @@ public partial class Employee
     public virtual Position PositionNavigation { get; set; } = null!;
 
     public virtual ICollection<Tip> Tips { get; set; } = new List<Tip>();
+
+    public Image GetQRcode()
+    {
+        var adress = "http://localhost:7116/Main/Index/";
+        var img = new QRCodeEncoder().Encode(adress + this.Id);
+
+        return img;
+    }
 }
