@@ -70,8 +70,8 @@ p {
 .main {
     background-color: #191919;
     padding: 100px 0;
-    height: 100vh;
 }
+
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

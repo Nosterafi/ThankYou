@@ -42,10 +42,11 @@ public partial class Employee
             {
                 bitmap.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
                 imageBytes = ms.ToArray();
+                return Convert.ToBase64String(imageBytes);
             }
 
 
-            return Convert.ToBase64String(imageBytes);
+           
         }
     }
 
