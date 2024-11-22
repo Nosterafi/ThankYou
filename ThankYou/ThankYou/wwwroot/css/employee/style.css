@@ -11,7 +11,7 @@ body {
 .container {
     max-width: 670px;
     padding: 0 15px;
-    margin:  0 auto;
+    margin: 0 auto;
 }
 
 p {
@@ -25,7 +25,7 @@ p {
 
 /*==================  HEADER ===================*/
 
-.header { 
+.header {
     padding: 12px 0;
     background-color: #30A8FF;
 }
@@ -39,13 +39,12 @@ p {
 .logo {
     font-size: 25px;
     letter-spacing: 4px;
-
     color: black;
 }
 
 .header__nav ul {
     display: flex;
-} 
+}
 
 .header__nav li + li {
     margin-left: 40px;
@@ -57,13 +56,13 @@ p {
     transition: color 0.2s;
 }
 
-.header__nav a:hover {
-    color: #0E20E7;
-}
+    .header__nav a:hover {
+        color: #0E20E7;
+    }
 
-.header__nav a:active {
-    color: #0F1DB2;
-}
+    .header__nav a:active {
+        color: #0F1DB2;
+    }
 
 /*================== MAIN ====================*/
 
@@ -89,16 +88,15 @@ input[type=text], input[type=password], input[type=number] {
     border-radius: 10px;
 }
 
-input[type=text]:focus, input[type=password]:focus, input[type=number]:focus  {
-    background-color: #30A8FF;
-    outline: none;
-}
+    input[type=text]:focus, input[type=password]:focus, input[type=number]:focus {
+        background-color: #30A8FF;
+        outline: none;
+    }
 /*================== INFO ====================*/
 
 .heading {
     font-size: 18px;
     color: #FDFDFD;
-
     display: flex;
     justify-content: center;
 }
@@ -106,21 +104,58 @@ input[type=text]:focus, input[type=password]:focus, input[type=number]:focus  {
 .info {
     background-color: #30A8FF;
     font-size: 18px;
-
-    padding: 50px 30px;
+    padding: 30px 30px;
     border-radius: 10px;
 }
 
-.info p {
-    color: #000000;
-    line-height: 1;
-}
+    .info p {
+        color: #000000;
+        line-height: 1;
+    }
 
 .ava img {
     width: 150px;
     height: 150px;
     object-fit: contain;
+    margin-bottom: 50px;
 }
+
+.info__form {
+    height: 100%;
+    min-height: 6vh;
+    margin: 0px;
+    padding: 0px;
+    -webkit-font-smoothing: antialiased;
+    transition: color 0.25s ease-in-out;
+    -webkit-tap-highlight-color: transparent;
+}
+
+    .info__form + .info__form {
+        margin-top: 20px;
+    }
+
+.info__elem {
+    width: 100%;
+    position: relative;
+    pointer-events: none;
+    padding: 10px 20px;
+    background-color: #86cdff;
+    border-radius: 10px;
+}
+
+    .info__elem h6 {
+        font-size: 16px;
+        color: #0f0f0f;
+    }
+
+    .info__elem p {
+        border-radius: 10px;
+        margin-top: 5px;
+        padding: 10px 20px;
+        background-color: #b4e0ff;
+        line-height: 1;
+    }
+
 
 .menu {
     display: flex;
@@ -129,27 +164,23 @@ input[type=text]:focus, input[type=password]:focus, input[type=number]:focus  {
 }
 
 .qrcode-button {
-    padding: 10px 30px;  
+    padding: 10px 30px;
     border-radius: 20px;
-
     background-color: #30A8FF;
 }
 
 .gen-qr {
     margin: 10px;
-	background: lightblue;
-	border: none;
-	border-radius: 1rem;
+    background: lightblue;
+    border: none;
+    border-radius: 1rem;
 }
-
-
-
 
 /* формируем фон для модального окна */
 .modal {
     /* темный фон при открытии модалки должен быть на всю страницу */
     text-align: center;
-    position: fixed; 
+    position: fixed;
     z-index: 1; /* поверх всех элементов */
     left: 0;
     top: 0;
@@ -157,47 +188,46 @@ input[type=text]:focus, input[type=password]:focus, input[type=number]:focus  {
     height: 100vh; /* полная высота */
     background-color: rgba(0,0,0,0.4); /* цвет фона - прозрачный черный */
 }
-  /* само модальное окно с контентом */
+/* само модальное окно с контентом */
 .modal-content {
     border-radius: 10px;
     background-color: #3b3b3b;
     /* окно будет находится по центру по горизонтали и с отступом сверху в 100 px */
-    margin: 100px auto; 
+    margin: 100px auto;
     padding: 20px;
-    width: 50%; 
+    width: 50%;
     font-size: 20px;
+    /* разнесем текст и кнопоку по краям окна */
 }
 
-.modal-content menu{
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
+    .modal-content menu {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
 
 .modal img {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     object-fit: contain;
 }
 
-.modal-content, .modal{
+.modal-content, .modal {
     color: #FDFDFD;
 }
 
 .cancel {
-    padding: 10px 30px;  
+    padding: 10px 30px;
     border-radius: 20px;
-
     background-color: #30A8FF;
 }
 
 .download {
-    padding: 10px 30px;  
+    padding: 10px 30px;
     border-radius: 20px;
-
     background-color: #30A8FF;
 }
 
@@ -207,22 +237,20 @@ input[type=text]:focus, input[type=password]:focus, input[type=number]:focus  {
 }
 
 .modal-content__text {
-    padding: 10px 30px;  
+    padding: 10px 30px;
     border-radius: 20px;
     background-color: #30A8FF;
     color: #0f0f0f;
 }
 
-.modal-content__text p {
-    margin: 5px 0;
-    padding: 5px 10px;  
-
-    border-radius: 20px;
-    color: #000000;
-    background-color: #86cdff;
-
-    font-size: 30px;
-}
+    .modal-content__text p {
+        margin: 5px 0;
+        padding: 5px 10px;
+        border-radius: 20px;
+        color: #000000;
+        background-color: #86cdff;
+        font-size: 30px;
+    }
 
 @media (max-width: 400px) {
     .header__nav li + li {
