@@ -30,18 +30,42 @@
             </div>
 
             <div class="info">
-                <p>Фамилия</p>
-                <p>@Model.Surname</p>
-                <p>Имя</p>
-                <p>@Model.Name</p>
-                <p>Отчество</p>
-                <p>@Model.Patronymic</p>
-                <p>Название заведения</p>
-                <p>@Model.Merchant.Name</p>
-                <p>Рейтинг</p>
-                <p>@Model.EmployeeRating</p>
-                <p>Должность</p>
-                <p>@Model.Position</p>
+                <div class="info__form">
+                  <div class="info__elem">
+                    <h6>Фамилия</h6>
+                    <p>@Model.Surname</p>
+                  </div>
+                </div>
+                <div class="info__form">
+                  <div class="info__elem">
+                    <h6>Имя</h6>
+                    <p>@Model.Name</p>
+                  </div>
+                </div>
+                <div class="info__form">
+                  <div class="info__elem">
+                    <h6>Имя</h6>
+                    <p>@Model.Patronymic</p>
+                  </div>
+                </div>
+                <div class="info__form">
+                  <div class="info__elem">
+                    <h6>Название заведения</h6>
+                    <p>@Model.Merchant.Name</p>
+                  </div>
+                </div>
+                <div class="info__form">
+                  <div class="info__elem">
+                    <h6>Рейтинг</h6>
+                    <p>@Model.EmployeeRating</p>
+                  </div>
+                </div>
+                <div class="info__form">
+                  <div class="info__elem">
+                    <h6>Должность</h6>
+                    <p>@Model.Position</p>
+                  </div>
+                </div>
             </div>
 
             <div class="menu">
@@ -54,11 +78,17 @@
                 <dialog id="favDialog">
                     <div class="modal">
                         <div class="modal-content">
+                            <div class="modal-content__text">
+                                <h5>Ваш код сотрудника</h5>
+                                <p><b>123123</b></p>
+                            </div>
                             <div>
+                                <h5>Ваш QR-код</h5>
                                 <img src="data:image/png;base64,@Model.GetQRcode" alt="QR-код">
                             </div>
                             <menu>
                                 <button class="cancel" id="cancel" type="reset">&times</button>
+                                <button class="download">&target;</button>
                             </menu>
                         </div>
                     </div>
