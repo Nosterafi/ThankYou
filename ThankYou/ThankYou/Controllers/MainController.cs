@@ -19,15 +19,14 @@ namespace ThankYou.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index(short employeeId = -1) 
+        public IActionResult Index() 
         {
             HttpContext.Session.SetString("invEmpFlag", "false");
-            return MainPage(employeeId);
+            return MainPage();
         }
 
-        public IActionResult MainPage(short employeeId = -1) { return View("main", employeeId); }
+        public IActionResult MainPage() { return View("main"); }
 
-        [HttpPost]
         public IActionResult PayPage(short employeeId)
         {
             var employee = _postgresContext.Employees.Find(employeeId);
@@ -50,7 +49,6 @@ namespace ThankYou.Controllers
             return View("pay", new PayViewModel(tip));
         }
 
-        [HttpPost]
         public IActionResult SendTip(PayViewModel viewModel) 
         {
             var currentTip = JsonConvert.DeserializeObject<Tip>(HttpContext.Session.GetString("currentTip"));

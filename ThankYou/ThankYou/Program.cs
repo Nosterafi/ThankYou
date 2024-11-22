@@ -28,6 +28,10 @@ internal class Program
     {
         app.MapControllerRoute(
             name: "default",
-            pattern: "{controller=Main}/{action=Index}/{employeeId?}");
+            pattern: "{controller=Main}/{action=Index}");
+
+        app.MapControllerRoute(
+            name: "pay",
+            pattern: "{controller=Main}/{action=PayPage}/{employeeId?}");
     }
 }
