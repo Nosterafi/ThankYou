@@ -59,6 +59,9 @@
                             </div>
                             <menu>
                                 <button class="cancel" id="cancel" type="reset">&times</button>
+                                <a id="downloadButton" href="data:image/png;base64,@Model.GetQRcode" download="qrcode.png">
+                                    <button type="button">Скачать QR-код</button>
+                                </a>
                             </menu>
                         </div>
                     </div>
