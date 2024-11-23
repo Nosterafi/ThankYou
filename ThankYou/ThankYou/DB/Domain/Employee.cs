@@ -44,9 +44,6 @@ public partial class Employee
                 imageBytes = ms.ToArray();
                 return Convert.ToBase64String(imageBytes);
             }
-
-
-           
         }
     }
 
