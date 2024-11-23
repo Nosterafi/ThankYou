@@ -33,7 +33,7 @@ public partial class PostgresContext : DbContext
     public virtual DbSet<User> Users { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=postgres;Username=postgres;Password=root");
+        => optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=ThankYou;Username=postgres;Password=root");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

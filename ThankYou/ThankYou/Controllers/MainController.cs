@@ -52,6 +52,10 @@ namespace ThankYou.Controllers
         public IActionResult SendTip(PayViewModel viewModel) 
         {
             var currentTip = JsonConvert.DeserializeObject<Tip>(HttpContext.Session.GetString("currentTip"));
+            var card = _postgresContext.BankCards.FirstOrDefault(card => card.Owner == currentTip.EmployeeId);
+
+            if (card == null)
+                return View("payError");
 
             currentTip.Employee = _postgresContext.Employees.Find(currentTip.EmployeeId);
             
