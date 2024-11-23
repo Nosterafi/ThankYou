@@ -34,7 +34,7 @@ public partial class Employee
     {
         get
         {
-            var adress = "http://localhost:5169/Main/Index/";
+            var adress = "https://localhost:7116/Main/PayPage/";
             Bitmap bitmap = new QRCodeEncoder().Encode(adress + this.Id);
             byte[] imageBytes;
 
