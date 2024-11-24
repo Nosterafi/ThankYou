@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@using ThankYou.ViewModels;
+@model PayViewModel;
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -23,7 +26,7 @@
 
     <main class="main">
         <section class="pay">
-            <form method="post" action="/Main/SendTip">
+            <form asp-controller="Pay" asp-action="SendTip" method="post">
                 <div class="container">
                     <div class="pay__heading">
                         <div class="pay__ava">
@@ -32,7 +35,8 @@
                         <div class="pay__info">
                             <h4>@Model.Tip.Employee.Merchant.Name</h4>
                             <p>@Model.Tip.Employee.Name</p>
-                            <p>@Math.Round(Model.Tip.Employee.EmployeeRating, 2)/5<img src="~/images/pay/adsad.png" alt="icon"></p>
+                            <p>@Math.Round(Model.Tip.Employee.EmployeeRating, 2)/5</p>
+                            <input type="hidden" asp-for="Tip.EmployeeId" value=@Model.Tip.EmployeeId/>
                         </div>
                     </div>
 
@@ -53,14 +57,14 @@
                         </div>
 
                         <div class="pay__selfsum-cont">
-                            <input type="number" class="pay__selfsum" name="Tip.Sum" min="10" minlength="1" max="65500" placeholder="Ввести свою сумму" required/>
+                            <input type="number" class="pay__selfsum" asp-for="Tip.Sum" min="10" minlength="1" max="65500" placeholder="Ввести свою сумму" required/>
                         </div>
                     </div>
 
                     <div class="pay__way">
                         <h4>Выберете способ оплаты</h4>
                         <div class="pay__way-select">
-                            <select class="select-css" name="PaymentMethod" id="way-payment">
+                            <select class="select-css" asp-for="PaymentMethod" id="way-payment">
                                 <option value="spb">СПБ</option>
                                 <option value="card">Банковская карта</option>
                             </select>
@@ -69,7 +73,7 @@
 
                     <div class="pay__rate">
                         <label class="rate-label">Оцените качество обслуживания</label>
-                        <select class="select-rate" name="Tip.Grade" id="user_rate" required>
+                        <select class="select-rate" asp-for="Tip.Grade" id="user_rate" required>
                             <option label=" "></option>
                             <option value="1">1 Ужасно</option>
                             <option value="2">2 Плохо</option>
@@ -81,7 +85,7 @@
 
                     <div class="pay__feedback">
                         <label class="feedback-label">Оставьте отзыв</label>
-                        <textarea class="" name="Tip.Review" id="feedback"></textarea>
+                        <textarea class="" asp-for="Tip.Review" id="feedback"></textarea>
                     </div>
 
                     <div class="pay__pers-name">

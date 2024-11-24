@@ -31,7 +31,7 @@ internal class Program
             pattern: "{controller=Main}/{action=Index}");
 
         app.MapControllerRoute(
-            name: "pay",
+            name: "beginPay",
             pattern: "{controller=Main}/{action=PayPage}/{employeeId?}");
     }
 }
