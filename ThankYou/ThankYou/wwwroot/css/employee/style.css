@@ -6,6 +6,7 @@ body {
     font-family: "Murecho", sans-serif;
     font-weight: 400;
     font-size: 14px;
+    overflow: auto
 }
 
 .container {
@@ -187,6 +188,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=number]:focus  {
 
 /* формируем фон для модального окна */
 .modal {
+    overflow: auto;
     /* темный фон при открытии модалки должен быть на всю страницу */
     text-align: center;
     position: fixed; 
@@ -207,7 +209,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=number]:focus  {
     width: 50%; 
     font-size: 20px;
     /* разнесем текст и кнопоку по краям окна */
-    
+    min-width: 260px;
 }
 
 .modal-content menu{
@@ -250,6 +252,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=number]:focus  {
 }
 
 .modal-content__text {
+    
     padding: 10px 30px;  
     border-radius: 20px;
     background-color: #30A8FF;
