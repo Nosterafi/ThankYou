@@ -9,21 +9,8 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="container  header__container">
-            <h1 class="logo">ThankU</h1>
-            <nav class="header__nav">
-                <ul>
-                    <li><a href="#!">Поддержка</a></li>
-                    <li><a href="#!">FAQ</a></li>
-                    <li><a href="#!">Профиль</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
     <main class="main">
-        <form method="post" action="/Main/Employee">
+        <form asp-controller="Sign" asp-action="FindEmployee" method="post">
             <div class="container">
                 <h1>Вход</h1>
 

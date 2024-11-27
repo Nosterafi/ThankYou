@@ -1,5 +1,4 @@
-﻿@using ThankYou.ViewModels;
-@model PayViewModel;
+﻿@model PayViewModel;
 
 <!DOCTYPE html>
 <html lang="en">
@@ -11,19 +10,6 @@
     <link rel="stylesheet" href="~/css/pay/style.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container  header__container">
-            <h1 class="logo">ThankU</h1>
-            <nav class="header__nav">
-                <ul>
-                    <li><a href="#!">Поддержка</a></li>
-                    <li><a href="#!">FAQ</a></li>
-                    <li><a href="#!">Профиль</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
     <main class="main">
         <section class="pay">
             <form asp-controller="Pay" asp-action="SendTip" method="post">

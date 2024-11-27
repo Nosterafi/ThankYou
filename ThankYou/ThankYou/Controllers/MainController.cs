@@ -51,27 +51,7 @@ namespace ThankYou.Controllers
         //    return View("signIn");
         //}
 
-        //[HttpPost]
-        //public IActionResult Employee(string phoneNumber, string password)
-        //{
-        //    // ѕроверка наличи€ пользовател€ в базе данных
-        //    // Ќеобходимо как то различать роли пользователей у нас есть сотрудники, а есть клиенты, а еще как бы же есть заведени€
-        //    // ѕока что во избежании ошибок ишем пользователей только в сотрудниках. ¬ременное решение 
-        //    var user = _postgresContext.Employees
-        //        .FirstOrDefault(u => u.PhoneNumber == phoneNumber && u.Password == password); 
-
-        //    if (user != null)
-        //    {
-        //        // ≈сли пользователь найден, перенаправл€ем на страницу профил€, передава€ id дл€ поиска информации о нем
-        //        return RedirectToAction("EmployeeProfile", new { id = user.Id});
-        //    }
-        //    else
-        //    {
-        //        // ≈сли пользователь не найден, возвращаем сообщение об ошибке
-        //        ModelState.AddModelError(string.Empty, "Ќеверный логин или пароль.");
-        //        return View("signIn"); // ¬озвращаем текущее представление с ошибкой
-        //    }
-        //}
+        
 
         //public IActionResult EmployeeProfile(short id)
         //{
