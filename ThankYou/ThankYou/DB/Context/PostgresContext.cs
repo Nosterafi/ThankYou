@@ -7,6 +7,8 @@ namespace ThankYou.DB.Context;
 
 public partial class PostgresContext : DbContext
 {
+    public static PostgresContext Current { get; set; } = new();
+
     public PostgresContext()
     {
     }

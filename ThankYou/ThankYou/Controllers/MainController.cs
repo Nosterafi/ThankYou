@@ -10,8 +10,6 @@ namespace ThankYou.Controllers
 {
     public class MainController : Controller
     {
-        private static PostgresContext _postgresContext = new();
-
         private readonly ILogger<MainController> _logger;
 
         public MainController(ILogger<MainController> logger) : base()
@@ -26,7 +24,7 @@ namespace ThankYou.Controllers
 
         public IActionResult PayPage(short employeeId)
         {
-            var employee = _postgresContext.Employees.Find(employeeId);
+            var employee = PostgresContext.Current.Employees.Find(employeeId);
 
             if (employee == null)
             {
@@ -34,33 +32,11 @@ namespace ThankYou.Controllers
                 return RedirectToAction("Index");
             }
 
-            employee.Merchant = _postgresContext.Merchants.Find(employee.MerchantId);
+            employee.Merchant = PostgresContext.Current.Merchants.Find(employee.MerchantId);
 
             var model = new PayViewModel(new Tip { Employee = employee , EmployeeId = employee.Id});
             return View("pay", model);
         }
-
-        //public IActionResult SendTip(PayViewModel viewModel) 
-        //{
-        //    var currentTip = JsonConvert.DeserializeObject<Tip>(HttpContext.Session.GetString("currentTip"));
-        //    var card = _postgresContext.BankCards.FirstOrDefault(card => card.Owner == currentTip.EmployeeId);
-
-        //    if (card == null)
-        //        return View("payError");
-
-        //    currentTip.Employee = _postgresContext.Employees.Find(currentTip.EmployeeId);
-            
-        //    currentTip.Sum = viewModel.Tip.Sum;
-        //    currentTip.Grade = viewModel.Tip.Grade;
-        //    currentTip.Review = viewModel.Tip.Review;
-        //    currentTip.Date = DateOnly.FromDateTime(DateTime.Now);
-
-        //    _postgresContext.Tips.Add(currentTip);
-        //    _postgresContext.SaveChanges();
-        //    _postgresContext = new();
-
-        //    return View("PaySucces");
-        //}
 
         //[HttpPost]
         //public ActionResult SignUp()
