@@ -32,55 +32,12 @@ namespace ThankYou.Controllers
                 return RedirectToAction("Index");
             }
 
+            HttpContext.Session.SetString("invEmpFlag", "false");
+
             employee.Merchant = PostgresContext.Current.Merchants.Find(employee.MerchantId);
 
             var model = new PayViewModel(new Tip { Employee = employee , EmployeeId = employee.Id});
             return View("pay", model);
         }
-
-        //[HttpPost]
-        //public ActionResult SignUp()
-        //{
-        //    throw new NotImplementedException();
-        //    return View("signUp");
-        //}
-
-        //[HttpPost]
-        //public ActionResult SignIn()
-        //{
-        //    return View("signIn");
-        //}
-
-        
-
-        //public IActionResult EmployeeProfile(short id)
-        //{
-        //    var employee = _postgresContext.Employees.Find(id);
-        //    employee.Merchant = _postgresContext.Merchants.Find(employee.MerchantId);
-
-        //    return View("EmployeeProfile", employee);
-        //}
-
-        //[HttpPost]
-        //public IActionResult FindEmployee(short employeeId)
-        //{
-        //    var employee = _postgresContext.Employees.Find(employeeId);
-
-        //    if (employee == null)
-        //    {
-        //        HttpContext.Session.SetString("invEmpFlag","true");
-        //        return RedirectToAction("MainPage");
-        //    }
-
-        //    employee.Merchant = _postgresContext.Merchants.Find(employee.MerchantId);
-
-        //    return View("EmployPage");
-        //}
-
-        //[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        //public IActionResult Error()
-        //{
-        //    return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        //}
     }
 }
