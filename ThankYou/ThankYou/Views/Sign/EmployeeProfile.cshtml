@@ -83,6 +83,33 @@
                     </div>
                 </dialog>
 
+                <button id="stats" class="statistics" type="button" onclick="openModal();">
+                  <div class="statistics-button">
+                    <img src="~/images/employee/chart-2.png" alt="icon">
+                  </div>
+                </button>
+
+                <dialog id="statsDialog">
+                  <div class="modal">
+                    <div class="modal-content">
+
+                      <h5></h5>
+                      <label for="start">Ваша Статистика на</label>
+
+                      <input type="date" id="start" name="trip-start" 
+                      value="2024-11-30" min="2024-01-01" max="2025-12-01" />
+
+                      <p>В этот день вы полчили: NNN</p>
+
+                      <menu>
+                        <button class="cancel" id="cancelstats" type="reset">&times</button>
+                        <button class="download">&target;</button>
+                      </menu>
+
+                    </div>
+                  </div>
+                </dialog>
+
             </div>
         </div>
     </main>
@@ -104,6 +131,24 @@
             // Form cancel button closes the dialog box
             cancelButton.addEventListener('click', function () {
                 favDialog.close();
+            });
+        })();
+         (function () {
+            var updateButton =
+                document.getElementById('stats');
+            var cancelButton =
+                document.getElementById('cancelstats');
+            var statsDialog =
+                document.getElementById('statsDialog');
+
+            // Update button opens a modal dialog
+            updateButton.addEventListener('click', function () {
+                statsDialog.showModal();
+            });
+
+            // Form cancel button closes the dialog box
+            cancelButton.addEventListener('click', function () {
+                statsDialog.close();
             });
         })();
     </script>
