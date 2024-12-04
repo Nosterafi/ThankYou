@@ -27,10 +27,10 @@
             <div class="container">
                 <h2 class="welcome__heading">Чаевые по QR-коду</h2>
                 <p  class="welcome__heading-text">Введите код сотрудника или отсканируйте QR-code:<p>
-                <input type="text" class="welcome__input-code" required minlength="6" maxlength="6">
+                <input type="number" id="code-text" class="welcome__input-code" required minlength="6" maxlength="6" placeholder="Код сотрудника">
+                <p class="error-message hide"><b>Неправильный код</b></p>
                 <div class="welcome__links">
-                    <button type="submit" class="link-code">Отправить чаевые</button>
-                    <button class="link-primary">Подключить заведение</button>
+                    <button type="submit" id="code-button" class="link-code">Отправить чаевые</button>
                 </div>
             </div>
         </section>
@@ -38,7 +38,7 @@
         <section class="information">
             <div class="container">
                 <h3 class="title">Что мы предлагаем</h3>
-                <p class="subtitle">Таки да</p>
+                <p class="subtitle">Наш веб-сервис помогает легко и удобно благодарить сотрудников кафе, ресторанов и других заведений. Мы предоставляем платформу, где гости могут оставлять чаевые онлайн, а заведения получают инструмент для управления профилями сотрудников и повышения качества сервиса.</p>
                 <div class="card-wrapper">
                     <div class="card">
                         <img src="img/diagram 1.png" alt="icon">
@@ -53,9 +53,9 @@
                     <div class="card">
                         <img src="img/touchscreen 1.png" alt="icon">
                         <h4>Удобный интерфейс</h4>
-                        <p>Простой и интуитивно понятный интерфейс, который легко использовать как клиентам, так и сотрудникам.</p>
                     </div>
                 </div>
+                <button class="link-primary">Подключить заведение</button>
             </div>
         </section>
     </main>

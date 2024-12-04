@@ -24,20 +24,45 @@
   <main class="main">
     <form action="action_page.php">
       <div class="container">
-        <h1>Вход</h1>
-       
+        <div class="sign">
+          <h1>Вход</h1>
     
-        <label for="login"><b>Логин</b></label>
-        <input type="text" placeholder="Введите логин" name="login" required>
-    
-        <label for="psw"><b>Пароль</b></label>
-        <input type="password" placeholder="Введите пароль" name="psw" required>
+          <label for="login"><b>Логин</b></label>
+          <input type="text" placeholder="Введите логин" name="login" required>
+      
+          <label for="psw"><b>Пароль</b></label>
+          <input type="password" placeholder="Введите пароль" name="psw" required>
 
-        <button type="submit" class="registerbtn">Войти</button>
-      </div>
-    
-      <div class="container signin">
-        <p>Нет подключенного заведения? <a href="D:\Apostol\reg\index.html">Подключить заведение</a>.</p>
+          <div class="radio-buttons">
+            <h6>Кто вы?</h6>
+          
+            <label class="radio-button">
+              <input type="radio" id="admin" name="drone" value="huey" checked />
+              <div class="radio-circle"></div>
+              <span class="radio-label">Администратор</span>
+            </label>
+          
+            <label class="radio-button">
+              <input type="radio" id="employee" name="drone" value="dewey" />
+              <div class="radio-circle"></div>
+              <span class="radio-label">Сотрудник</span>
+            </label>
+          
+            <label class="radio-button">
+              <input type="radio" id="visitor" name="drone" value="louie" />
+              <div class="radio-circle"></div>
+              <span class="radio-label">Посетитель</span>
+            </label>
+
+          </div>
+
+          <button type="submit" class="registerbtn">Войти</button>
+
+          <div class="signin">
+            <p>Нет подключенного заведения? <a href="D:\Apostol\reg\index.html">Подключить заведение</a>.</p>
+          </div>
+
+        </div>
       </div>
     </form>
   </main>

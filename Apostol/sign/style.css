@@ -82,6 +82,68 @@ p , b{
 
 /*================== REG ===================*/
 
+.sign label {
+  color: #FDFDFD;
+}
+
+.sign h6 {
+  font-size: 18px;
+  color: #FDFDFD;
+  margin-bottom: 10px;
+}
+
+/* From Uiverse.io by coding-masala */ 
+.radio-buttons {
+  display: flex;
+  color: white;
+
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.radio-button {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.radio-button input[type="radio"] {
+  display: none;
+}
+
+.radio-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #5c5c5c;
+  position: relative;
+  margin-right: 10px;
+}
+
+.radio-circle::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #30A8FF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 0.2s ease-in-out;
+}
+
+.radio-button input[type="radio"]:checked + .radio-circle::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.radio-label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
 input[type=text], input[type=password], input[type=tel] {
   width: 100%;
   padding: 15px;
@@ -97,7 +159,6 @@ input[type=text]:focus, input[type=password]:focus, input[type=tel]:focus  {
   background-color: #ddd;
   outline: none;
 }
-
 
 /* Set a style for the submit/register button */
 .registerbtn {
@@ -117,7 +178,6 @@ input[type=text]:focus, input[type=password]:focus, input[type=tel]:focus  {
   opacity:1;
 }
 
-
 /* Add a blue text color to links */
 a {
   color: dodgerblue;
@@ -132,10 +192,6 @@ a:visited {
   margin-top: 25px;
   text-align: center;
 }
-
-
-
-
 
 @media (max-width: 400px) {
   .header__nav li + li {

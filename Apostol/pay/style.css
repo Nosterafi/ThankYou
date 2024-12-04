@@ -23,6 +23,23 @@ p {
     display: none !important;
 }
 
+input[type=text], input[type=password], input[type=tel] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+
+    border-radius: 10px;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=tel]:focus  {
+    background-color: #ddd;
+    outline: none;
+}
+
+
 /*==================  HEADER ===================*/
 
 .header { 
@@ -116,9 +133,9 @@ p {
 
 .pay__sum {
     display: flex;
-    gap: 20px;
+    gap: 30px;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
 
     margin-bottom: 30px;
 
@@ -155,7 +172,7 @@ p {
 /*================== PAYMENT METHOD ===================*/
 
 .pay__way {
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 .pay__way h4 {
@@ -215,7 +232,7 @@ p {
 /*================== PAY RATE ===================*/
 
 .pay__rate {
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .rate-label {
@@ -293,7 +310,7 @@ p {
 }
 
 .pay__feedback {
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 .pay__feedback label {
@@ -320,6 +337,19 @@ p {
     height: 200px; /* Высота */
 }
 
+.pay__pers-name {
+    margin-top: 40px;
+
+    font-size: 18px;
+    color: #FDFDFD;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+
+.pay__pers-name input {
+    margin-top: 20px;
+    max-width: 640px;
+}
 
 .pay__send-cont {
     text-align: center;
@@ -335,8 +365,6 @@ p {
 
     background-color: #30A8FF;
 }
-
-
 
 @media (max-width: 400px) {
     .header__nav li + li {
