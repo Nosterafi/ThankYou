@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ThankYou.DB.Context;
 using ThankYou.DB.Domain;
+using ThankYou.ViewModels;
 
 namespace ThankYou.Controllers
 {
@@ -25,7 +26,7 @@ namespace ThankYou.Controllers
             {
                 // Если пользователь найден, перенаправляем на страницу профиля, передавая id для поиска информации о нем
                 user.Merchant = PostgresContext.Current.Merchants.Find(user.MerchantId);
-                return View("EmployeeProfile", user);
+                return View("EmployeeProfile", new EmployeeViewModel(user));
             }
             else
             {

@@ -1,3 +1,5 @@
+@model EmployeeViewModel;
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,43 +21,43 @@
                 <div class="info__form">
                   <div class="info__elem">
                     <h6>Фамилия</h6>
-                    <p>@Model.Surname</p>
+                    <p>@Model.Employee.Surname</p>
                   </div>
                 </div>
                 <div class="info__form">
                   <div class="info__elem">
                     <h6>Имя</h6>
-                    <p>@Model.Name</p>
+                    <p>@Model.Employee.Name</p>
                   </div>
                 </div>
                 <div class="info__form">
                   <div class="info__elem">
                     <h6>Имя</h6>
-                    <p>@Model.Patronymic</p>
+                    <p>@Model.Employee.Patronymic</p>
                   </div>
                 </div>
                 <div class="info__form">
                   <div class="info__elem">
                     <h6>Название заведения</h6>
-                    <p>@Model.Merchant.Name</p>
+                    <p>@Model.Employee.Merchant.Name</p>
                   </div>
                 </div>
                 <div class="info__form">
                   <div class="info__elem">
                     <h6>Рейтинг</h6>
-                    <p>@Model.EmployeeRating</p>
+                    <p>@Model.Employee.EmployeeRating</p>
                   </div>
                 </div>
                 <div class="info__form">
                   <div class="info__elem">
                     <h6>Должность</h6>
-                    <p>@Model.Position</p>
+                    <p>@Model.Employee.Position</p>
                   </div>
                 </div>
             </div>
 
             <div class="menu">
-                <button id = "qr" class="qr" type="button" onclick="window.qr.showModal()">
+                <button id = "qr" class="qr" type="button">
                     <div class="qrcode-button">
                         <img src="~/images/employee/qr-code-line.png" alt="icon">
                     </div>
@@ -66,16 +68,16 @@
                         <div class="modal-content">
                             <div class="modal-content__text">
                                 <h5>Ваш код сотрудника</h5>
-                                <p><b>@Model.Id</b></p>
+                                <p><b>@Model.Employee.Id</b></p>
                             </div>
                             <div>
                                 <h5>Ваш QR-код</h5>
-                                <img src="data:image/png;base64,@Model.GetQRcode" alt="QR-код">
+                                <img src="data:image/png;base64,@Model.Employee.GetQRcode" alt="QR-код">
                             </div>
                             <menu>
                                 <button class="cancel" id="cancel" type="reset">&times</button>
 
-                                <a id="downloadButton" href="data:image/png;base64,@Model.GetQRcode" download="qrcode.png">
+                                <a id="downloadButton" href="data:image/png;base64,@Model.Employee.GetQRcode" download="qrcode.png">
                                     <button class="download"  type="button">Скачать QR-код</button>
                                 </a>
                             </menu>
@@ -83,7 +85,7 @@
                     </div>
                 </dialog>
 
-                <button id="stats" class="statistics" type="button" onclick="openModal();">
+                <button id="stats" class="statistic" type="button">
                   <div class="statistics-button">
                     <img src="~/images/employee/chart-2.png" alt="icon">
                   </div>
@@ -96,61 +98,29 @@
                       <h5></h5>
                       <label for="start">Ваша Статистика на</label>
 
-                      <input type="date" id="start" name="trip-start" 
-                      value="2024-11-30" min="2024-01-01" max="2025-12-01" />
+                      <input asp-for="Day" type="date" id="start" name="trip-start" 
+                      value="2024-11-30" min="2024-01-01" max="2025-12-01" oninput="update_sumTips(event)"/>
 
-                      <p>В этот день вы полчили: NNN</p>
+                            <p id="sumTips">"В этот день вы получили: @Model.SumTips"</p>
 
                       <menu>
                         <button class="cancel" id="cancelstats" type="reset">&times</button>
-                        <button class="download">&target;</button>
                       </menu>
-
                     </div>
                   </div>
                 </dialog>
-
             </div>
         </div>
     </main>
 
+    <script src="~/js/employee_statistic.js"></script>
     <script>
-        (function () {
-            var updateButton =
-                document.getElementById('qr');
-            var cancelButton =
-                document.getElementById('cancel');
-            var favDialog =
-                document.getElementById('favDialog');
-
-            // Update button opens a modal dialog
-            updateButton.addEventListener('click', function () {
-                favDialog.showModal();
-            });
-
-            // Form cancel button closes the dialog box
-            cancelButton.addEventListener('click', function () {
-                favDialog.close();
-            });
-        })();
-         (function () {
-            var updateButton =
-                document.getElementById('stats');
-            var cancelButton =
-                document.getElementById('cancelstats');
-            var statsDialog =
-                document.getElementById('statsDialog');
-
-            // Update button opens a modal dialog
-            updateButton.addEventListener('click', function () {
-                statsDialog.showModal();
-            });
-
-            // Form cancel button closes the dialog box
-            cancelButton.addEventListener('click', function () {
-                statsDialog.close();
-            });
-        })();
+        function update_sumTips(event) {
+            alert();
+            @Model.Day = event.target.value;
+            var p = document.getElementById("sumTips");
+            p.innerHTML = "В этот день вы получили: ".concat(@Model.SumTips);
+        }
     </script>
 </body>
 </html>
