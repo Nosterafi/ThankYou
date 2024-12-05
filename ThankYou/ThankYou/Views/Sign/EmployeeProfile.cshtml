@@ -98,10 +98,13 @@
                       <h5></h5>
                       <label for="start">Ваша Статистика на</label>
 
-                      <input asp-for="Day" type="date" id="start" name="trip-start" 
-                      value="2024-11-30" min="2024-01-01" max="2025-12-01" oninput="update_sumTips(event)"/>
+                      <form method="post" asp-controller="Sign" asp-action="UpdateSumTips">
+                        <input type="hidden" asp-for="Employee.Id",  value=@Model.Employee.Id/>
+                        <input type="date" id="start" name="FormatedDay" 
+                        value=@Model.FormatedDay min="2024-01-01" max="2025-12-01" oninput="update_sumTips(event)"/>
 
-                            <p id="sumTips">"В этот день вы получили: @Model.SumTips"</p>
+                        <p id="sumTips">"В этот день вы получили: @Model.SumTips руб."</p>
+                      </form>
 
                       <menu>
                         <button class="cancel" id="cancelstats" type="reset">&times</button>
@@ -112,15 +115,6 @@
             </div>
         </div>
     </main>
-
-    <script src="~/js/employee_statistic.js"></script>
-    <script>
-        function update_sumTips(event) {
-            alert();
-            @Model.Day = event.target.value;
-            var p = document.getElementById("sumTips");
-            p.innerHTML = "В этот день вы получили: ".concat(@Model.SumTips);
-        }
-    </script>
+    <script src="~/js/employee.js"></script>
 </body>
 </html>

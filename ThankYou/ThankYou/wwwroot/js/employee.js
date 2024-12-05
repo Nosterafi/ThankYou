@@ -36,4 +36,7 @@
     });
 })();
 
+function update_sumTips(event) {
+    event.target.parentElement.submit();
+}
 

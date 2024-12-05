@@ -5,18 +5,35 @@ namespace ThankYou.ViewModels
 {
     public class EmployeeViewModel
     {
-        public Employee Employee { get; set; }
+        private DateOnly day { get; set; }
 
-        public DateOnly Day { get; set; }
+        public bool OpenStatFlag { get; set; } = false;
+
+        public string FormatedDay
+        {
+            get { return day.ToString("yyyy-MM-dd"); }
+
+            set
+            {
+                day = DateOnly.Parse(value);
+            }
+        }
+
+        public Employee Employee { get; set; }
 
         public int SumTips 
         {
             get
             {
                 return PostgresContext
-                    .Current.Tips.Where(t => t.Employee.Id == Employee.Id && t.Date == Day)
+                    .Current.Tips.Where(t => t.Employee.Id == Employee.Id && t.Date == day)
                     .Sum(t => t.Sum);
             }
+        }
+
+        public EmployeeViewModel()
+        {
+            Employee = new Employee();
         }
 
         public EmployeeViewModel(Employee employee)

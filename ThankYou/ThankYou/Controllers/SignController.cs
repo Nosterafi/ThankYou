@@ -35,5 +35,13 @@ namespace ThankYou.Controllers
                 return View("signIn"); // Возвращаем текущее представление с ошибкой
             }
         }
+
+        [HttpPost]
+        public IActionResult UpdateSumTips(EmployeeViewModel model)
+        {
+            model.OpenStatFlag = true;
+            model.Employee = PostgresContext.Current.Employees.Find(model.Employee.Id);
+            return View("EmployeeProfile", model);
+        }
     }
 }
