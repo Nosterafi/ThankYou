@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThankU</title>
+    <link rel="stylesheet" href="reset.css"> 
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+  <header class="header">
+    <div class="container  header__container">
+        <h1 class="logo">ThankU</h1>
+        <nav class="header__nav">
+            <ul>
+                <li><a href="#!">Поддержка</a></li>
+                <li><a href="#!">FAQ</a></li>
+                <li><a href="#!">Профиль</a></li>
+            </ul>
+        </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <div class="heading">
+        <h2>Сотрудники заведения</h6>
+      </div>
+
+      <div class="employee">
+        <div class="employee__form">
+          <div class="employee__ava">
+            <img src="" alt="img">
+          </div>
+          <div class="employee__elem">
+            <ul>
+              <li>@Model.</li>
+              <li>@Model.Merchant.Name</li>
+              <li>@Model.Merchant.Name</li>
+            </ul>
+          </div>
+        </div>
+        <div class="employee__form">
+          <div class="employee__ava">
+            <img src="" alt="img">
+          </div>
+          <div class="employee__elem">
+            <ul>
+              <li>@Model.</li>
+              <li>@Model.Merchant.Name</li>
+              <li>@Model.Merchant.Name</li>
+            </ul>
+          </div>
+        </div>
+        <div class="employee__form">
+          <div class="employee__ava">
+            <img src="" alt="img">
+          </div>
+          <div class="employee__elem">
+            <ul>
+              <li>@Model.</li>
+              <li>@Model.Merchant.Name</li>
+              <li>@Model.Merchant.Name</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button id="emp" class="emp" type="button" onclick="">
+          <div class="emp-button">
+            <p>Добавить сотрудника</p>
+          </div>
+        </button>
+      </div>
+
+      <dialog id="favDialog">
+        <div class="modal">
+          <div class="modal-content">
+
+            <h5>Новый сотрудник</h5>
+            <div class="modal-content__text">
+              <p>Логин: <b>123123</b></p>
+              <p>Пароль: <b>123123</b></p>
+            </div>
+            <menu>
+              <button class="cancel" id="cancel" type="reset">&times</button>
+            </menu>
+
+          </div>
+        </div>
+      </dialog>
+
+    </div>
+  </main>
+
+  <script>
+    (function () {
+        var updateButton =
+            document.getElementById('emp');
+        var cancelButton =
+            document.getElementById('cancel');
+        var favDialog =
+            document.getElementById('favDialog');
+
+        // Update button opens a modal dialog
+        updateButton.addEventListener('click', function () {
+            favDialog.showModal();
+        });
+
+        // Form cancel button closes the dialog box
+        cancelButton.addEventListener('click', function () {
+            favDialog.close();
+        });
+    })();
+  </script>
+</body>
+</html>

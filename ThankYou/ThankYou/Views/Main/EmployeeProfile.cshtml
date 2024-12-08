@@ -68,55 +68,40 @@
                 </div>
             </div>
 
-            <div class="menu">
-                <button id = "qr" class="qr" type="button" onclick="window.qr.showModal()">
-                    <div class="qrcode-button">
-                        <img src="~/images/employee/qr-code-line.png" alt="icon">
-                    </div>
-                </button>
+            <div class="stats">
+                <div class="stats-content">
 
-                <dialog id="favDialog">
-                    <div class="modal">
-                        <div class="modal-content">
-                            <div class="modal-content__text">
-                                <h5>Ваш код сотрудника</h5>
-                                <p><b>123123</b></p>
-                            </div>
-                            <div>
-                                <h5>Ваш QR-код</h5>
-                                <img src="data:image/png;base64,@Model.GetQRcode" alt="QR-код">
-                            </div>
-                            <menu>
-                                <button class="cancel" id="cancel" type="reset">&times</button>
+                  <div class="stats__date">
+                    <label for="start">Ваша cтатистика на</label>
 
-                                <a id="downloadButton" href="data:image/png;base64,@Model.GetQRcode" download="qrcode.png">
-                                    <button class="download"  type="button">Скачать QR-код</button>
-                                </a>
-                            </menu>
-                        </div>
-                    </div>
-                </dialog>
+                    <input type="date" id="start" name="trip-start" 
+                    value="2024-11-30" min="2024-01-01" max="2025-12-01" />
+                  </div>
 
-                <button id="stats" class="statistics" type="button" onclick="openModal();">
-                  <div class="statistics-button">
-                    <img src="~/images/employee/chart-2.png" alt="icon">
+                  <p>В этот день вы полчили: <b>NNN</b></p>
+
+                </div>
+              </div>
+
+              <div class="menu">
+                <button id="qr" class="qr" type="button" onclick="openModal();">
+                  <div class="qrcode-button">
+                    <img src="img/qr-code-line.png" alt="icon">
                   </div>
                 </button>
 
-                <dialog id="statsDialog">
+                <dialog id="favDialog">
                   <div class="modal">
                     <div class="modal-content">
 
-                      <h5></h5>
-                      <label for="start">Ваша Статистика на</label>
-
-                      <input type="date" id="start" name="trip-start" 
-                      value="2024-11-30" min="2024-01-01" max="2025-12-01" />
-
-                      <p>В этот день вы полчили: NNN</p>
-
+                      <img src="D:\Project\OnlineTips\Apostol\pay\img\1de3dc07-8cb1-4122-a1e1-487a0d3e96ea.png" alt="img">
+                      <h5>Ваш QR-код</h5>
+                      <div class="modal-content__text">
+                        <h5>Ваш код сотрудника</h5>
+                        <p><b>123123</b></p>
+                      </div>
                       <menu>
-                        <button class="cancel" id="cancelstats" type="reset">&times</button>
+                        <button class="cancel" id="cancel" type="reset">&times</button>
                         <button class="download">&target;</button>
                       </menu>
 
@@ -124,6 +109,11 @@
                   </div>
                 </dialog>
 
+                <button id="stats" class="statistics" type="button" onclick="openModal();">
+                  <div class="statistics-button">
+                    <img src="img/chart-2.png" alt="icon">
+                  </div>
+                </button>
             </div>
 
 
