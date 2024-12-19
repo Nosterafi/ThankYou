@@ -85,33 +85,7 @@
                     </div>
                 </dialog>
 
-                <button id="stats" class="statistic" type="button">
-                  <div class="statistics-button">
-                    <img src="~/images/employee/chart-2.png" alt="icon">
-                  </div>
-                </button>
-
-                <dialog id="statsDialog">
-                  <div class="modal">
-                    <div class="modal-content">
-
-                      <h5></h5>
-                      <label for="start">Ваша Статистика на</label>
-
-                      <form method="post" asp-controller="Sign" asp-action="UpdateSumTips">
-                        <input type="hidden" asp-for="Employee.Id",  value=@Model.Employee.Id/>
-                        <input type="date" id="start" name="FormatedDay" 
-                        value=@Model.FormatedDay min="2024-01-01" max="2025-12-01" oninput="update_sumTips(event)"/>
-
-                        <p id="sumTips">"В этот день вы получили: @Model.SumTips руб."</p>
-                      </form>
-
-                      <menu>
-                        <button class="cancel" id="cancelstats" type="reset">&times</button>
-                      </menu>
-                    </div>
-                  </div>
-                </dialog>
+                
             </div>
         </div>
     </main>
