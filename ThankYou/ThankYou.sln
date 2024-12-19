@@ -5,6 +5,11 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThankYou", "ThankYou\ThankYou.csproj", "{D3E13B00-FB09-403E-905F-A4B76FD3C3AF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решения", "Элементы решения", "{229757C4-C46E-406E-8D63-1C912D319493}"
+	ProjectSection(SolutionItems) = preProject
+		web.config = web.config
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

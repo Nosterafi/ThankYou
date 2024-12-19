@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ThankYou.DB.Context;
-using ThankYou.DB.Domain;
 using ThankYou.ViewModels;
 
 namespace ThankYou.Controllers
