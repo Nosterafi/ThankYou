@@ -1,9 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
 using ThankYou.DB.Context;
 using ThankYou.DB.Domain;
 using ThankYou.ViewModels;
-using Newtonsoft.Json;
 
 namespace ThankYou.Controllers
 {
