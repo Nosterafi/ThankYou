@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Murecho:wght@100..900&display=swap');
+
+/*================== Общие стили ==========================*/
+
+body {
+    font-family: "Murecho", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 1122px;
+    padding: 0 15px;
+    margin:  0 auto;
+}
+
+p {
+    color: #FDFDFD;
+    line-height: 1.8;
+}
+
+.hide {
+    display: none !important;
+}
+
+/*==================  HEADER ===================*/
+
+.header { 
+    padding: 12px 0;
+    background-color: #30A8FF;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    letter-spacing: 4px;
+
+    color: black;
+}
+
+.header__nav ul {
+    display: flex;
+} 
+
+.header__nav li + li {
+    margin-left: 40px;
+}
+
+.header__nav a {
+    font-size: 16px;
+    color: #000000;
+    transition: color 0.2s;
+}
+
+.header__nav a:hover {
+    color: #0E20E7;
+}
+
+.header__nav a:active {
+    color: #0F1DB2;
+}
+
+/*================== MAIN ====================*/
+
+.main {
+    background-color: #191919;
+}
+
+/*================== WELCOME ====================*/
+
+.welcome {
+    color: #FFFFFF;
+    
+    padding: 150px 0;
+    margin:  0 auto;
+    height: 100vh;
+
+    min-height: 600px;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.error-message {
+    color: rgb(202, 23, 23);
+}
+
+.welcome__heading {
+    margin-bottom: 50px;
+
+    font-size: 40px;
+    line-height: 1;
+}
+
+.welcome__heading-text {
+    margin-bottom: 30px;
+}
+
+
+
+.welcome__input-code {
+    width:200px;
+    height: 25px;
+
+    border-radius: 4px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.welcome__links {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.link-code {
+    display: inline-block;
+    padding: 10px 30px;
+    
+    color: #0f0f0f;
+    background-color: #30A8FF;
+
+    border-radius: 4px;
+}
+
+.link-primary {
+    margin-top: 50px;
+
+    display: inline-block;
+    padding: 10px 30px;
+
+    color: #0f0f0f;
+    background-color: #30A8FF;
+
+    border-radius: 4px;
+}
+
+/*================== INFO ====================*/
+
+.information {
+    color: #FFFFFF;
+    text-align: center;
+
+    padding: 150px 0;
+
+}
+
+.title {
+    margin-bottom: 50px;
+    font-size: 40px;
+    line-height: 1;
+}
+
+.subtitle {
+    font-size: 16px;
+    margin: 20px 100px 40px 100px;
+}
+
+.information .card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.information .card {
+    padding: 35px 15px 25px 15px;
+    width: 300px;
+    border: 1px solid #FDFDFD;
+    border-radius: 5px;
+}
+
+.information .card img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.information .card h4 {
+    font-size: 20px;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+/*================== FOOTER ====================*/
+
+.footer {
+    color:#FDFDFD;
+    background-color: #333333;
+    padding: 20px 0;
+}
+
+
+.footer__desc h4 {
+    margin-bottom: 25px;
+
+    font-size: 20px;
+    line-height: 1;
+}
+
+.footer__desc li {
+    font-size: 16px;
+    height: 30px;
+    position: relative;
+}
+
+.footer__desc li + li {
+    margin-top: 10px;
+}
+
+.footer__answer li::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    background-color: #1f1f1f;
+} 
+
+
+.footer__desc-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.footer__desc-container > * {
+    width: 25%;
+}
+
+.footer__support img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    margin-right: 10px; 
+}
+
+.footer__collaboration img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.footer__support {
+    min-width: 260px;
+}
+
+.footer__collaboration {
+    min-width: 260px;
+}
+
+.footer__answer {
+    min-width: 260px;
+}
+
+@media (max-width: 400px) {
+    .header__nav li + li {
+        margin-left: 5px;
+    }
+}

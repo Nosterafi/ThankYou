@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Murecho:wght@100..900&display=swap');
+
+/*================== Общие стили ==========================*/
+
+body {
+    font-family: "Murecho", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 670px;
+    padding: 0 15px;
+    margin:  0 auto;
+}
+
+p {
+    color: #FDFDFD;
+    line-height: 1.8;
+}
+
+.hide {
+    display: none !important;
+}
+
+/*==================  HEADER ===================*/
+
+.header { 
+    padding: 12px 0;
+    background-color: #30A8FF;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    letter-spacing: 4px;
+
+    color: black;
+}
+
+.header__nav ul {
+    display: flex;
+} 
+
+.header__nav li + li {
+    margin-left: 40px;
+}
+
+.header__nav a {
+    font-size: 16px;
+    color: #000000;
+    transition: color 0.2s;
+}
+
+.header__nav a:hover {
+    color: #0E20E7;
+}
+
+.header__nav a:active {
+    color: #0F1DB2;
+}
+
+/*================== MAIN ===================*/
+
+.main {
+    background-color: #191919;
+    height: 100vh;
+
+    padding: 150px 0;
+}
+
+.main h1 {
+    font-size: 30px;
+    color: #FDFDFD;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 100px;
+}
+
+.main p {
+    font-size: 18px;
+    line-height: 2;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.main a {
+    color: #3c4bda;
+    transition: color 0.2s;
+}
+
+.main a:active {
+    color: #0F1DB2;
+}
+
+.main a:hover {
+    color: #1324e2;
+}
+
+
+@media (max-width: 400px) {
+    .header__nav li + li {
+        margin-left: 5px;
+    }
+}

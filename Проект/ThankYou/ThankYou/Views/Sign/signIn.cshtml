@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="~/css/signIn/reset.css">
+    <link rel="stylesheet" href="~/css/signIn/style.css">
+</head>
+
+<body>
+    <main class="main">
+        <form asp-controller="Sign" asp-action="FindEmployee" method="post">
+            <div class="container">
+                <h1>Вход</h1>
+
+                <label for="phoneNumber"><b>Логин</b></label>
+                <input type="text" placeholder="Введите номер телофона" name="phoneNumber" required min="0">
+                <label for="password"><b>Пароль</b></label>
+                <input type="password" placeholder="Введите пароль" name="password" required>
+
+                <button type="submit" class="registerbtn">Войти</button>
+
+                @if (!ViewData.ModelState.IsValid)
+                {
+                    <div class="alert alert-danger">
+                        @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                        {
+                            <p style="color:red;">@error.ErrorMessage</p>
+                        }
+                    </div>
+                }
+
+            </div>
+            <div class="container signin">
+                <p>Нет подключенного заведения? <a href="#!">Подключить заведение</a>.</p>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

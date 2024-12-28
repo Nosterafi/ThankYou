@@ -1,0 +1,92 @@
+@model EmployeeViewModel;
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThankU</title>
+    <link rel="stylesheet" href="~/css/employee/reset.css">
+    <link rel="stylesheet" href="~/css/employee/style.css">
+</head>
+<body>
+    <main class="main" >
+        <div class="container">
+            <div class="heading">
+                <div class="ava">
+                    <img src="~/images/pay/1de3dc07-8cb1-4122-a1e1-487a0d3e96ea.png" alt="image">
+                </div>
+            </div>
+            <div class="info">
+                <div class="info__form">
+                  <div class="info__elem">
+                    <h6>Фамилия</h6>
+                    <p>@Model.Employee.Surname</p>
+                  </div>
+                </div>
+                <div class="info__form">
+                  <div class="info__elem">
+                    <h6>Имя</h6>
+                    <p>@Model.Employee.Name</p>
+                  </div>
+                </div>
+                <div class="info__form">
+                  <div class="info__elem">
+                    <h6>Имя</h6>
+                    <p>@Model.Employee.Patronymic</p>
+                  </div>
+                </div>
+                <div class="info__form">
+                  <div class="info__elem">
+                    <h6>Название заведения</h6>
+                    <p>@Model.Employee.Merchant.Name</p>
+                  </div>
+                </div>
+                <div class="info__form">
+                  <div class="info__elem">
+                    <h6>Рейтинг</h6>
+                    <p>@Model.Employee.EmployeeRating</p>
+                  </div>
+                </div>
+                <div class="info__form">
+                  <div class="info__elem">
+                    <h6>Должность</h6>
+                    <p>@Model.Employee.Position</p>
+                  </div>
+                </div>
+            </div>
+
+            <div class="menu">
+                <button id = "qr" class="qr" type="button">
+                    <div class="qrcode-button">
+                        <img src="~/images/employee/qr-code-line.png" alt="icon">
+                    </div>
+                </button>
+
+                <dialog id="favDialog">
+                    <div class="modal">
+                        <div class="modal-content">
+                            <div>
+                                <img src="data:image/png;base64,@Model.Employee.GetQRcode" alt="QR-код">
+                            </div>
+                            <h5>Ваш QR-код</h5>
+                            <div class="modal-content__text">
+                                <h5>Ваш код сотрудника</h5>
+                                <p><b>@Model.Employee.Id</b></p>
+                            </div>
+                            <menu>
+                                <button class="cancel" id="cancel" type="reset">&times</button>
+
+                                <a id="downloadButton" href="data:image/png;base64,@Model.Employee.GetQRcode" download="qrcode.png">
+                                    <button class="download"  type="button">Скачать QR-код</button>
+                                </a>
+                            </menu>
+                        </div>
+                    </div>
+                </dialog>
+            </div>
+        </div>
+    </main>
+    <script src="~/js/employee.js"></script>
+</body>
+</html>

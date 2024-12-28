@@ -1,0 +1,97 @@
+﻿@model PayViewModel;
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThankU</title>
+    <link rel="stylesheet" href="~/css/pay/reset.css">
+    <link rel="stylesheet" href="~/css/pay/style.css">
+</head>
+<body>
+    <main class="main">
+        <section class="pay">
+            <form asp-controller="Pay" asp-action="SendTip" method="post">
+                <div class="container">
+                    <div class="pay__heading">
+                        <div class="pay__ava">
+                            <img src="~/images/pay/1de3dc07-8cb1-4122-a1e1-487a0d3e96ea.png" alt="image">
+                        </div>
+                        <div class="pay__info">
+                            <h4>@Model.Tip.Employee.Merchant.Name</h4>
+                            <p>@Model.Tip.Employee.Name</p>
+                            <p>@Math.Round(Model.Tip.Employee.EmployeeRating, 2)/5</p>
+                            <input type="hidden" asp-for="Tip.EmployeeId" value=@Model.Tip.EmployeeId/>
+                        </div>
+                    </div>
+
+                    <div class="pay__selection">
+                        <div class="pay__sum">
+                            <div class="sum">
+                                <button type="button" value="100" onclick="setSum(event)">100р</button>
+                            </div>
+                            <div class="sum">
+                                <button type="button" value="300" onclick="setSum(event)">300р</button>
+                            </div>
+                            <div class="sum">
+                                <button type="button" value="700" onclick="setSum(event)">700р</button>
+                            </div>
+                            <div class="sum">
+                                <button type="button" value="1000" onclick="setSum(event)">1000р</button>
+                            </div>
+                        </div>
+
+                        <div class="pay__selfsum-cont">
+                            <input type="number" class="pay__selfsum" asp-for="Tip.Sum" min="10" minlength="1" max="65500" placeholder="Ввести свою сумму" required/>
+                        </div>
+                    </div>
+
+                    <div class="pay__way">
+                        <h4>Выберете способ оплаты</h4>
+                        <div class="pay__way-select">
+                            <select class="select-css" asp-for="PaymentMethod" id="way-payment">
+                                <option value="spb">СПБ</option>
+                                <option value="card">Банковская карта</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="pay__rate">
+                        <label class="rate-label">Оцените качество обслуживания</label>
+                        <select class="select-rate" asp-for="Tip.Grade" id="user_rate" required>
+                            <option label=" "></option>
+                            <option value="1">1 Ужасно</option>
+                            <option value="2">2 Плохо</option>
+                            <option value="3">3 Более-менее</option>
+                            <option value="4">4 Хорошо</option>
+                            <option value="5">5 Великолепно</option>
+                        </select>
+                    </div>
+
+                    <div class="pay__feedback">
+                        <label class="feedback-label">Оставьте отзыв</label>
+                        <textarea class="" asp-for="Tip.Review" id="feedback"></textarea>
+                    </div>
+
+                    <div class="pay__pers-name">
+                      <div class="pay__name">
+                        <label for="place-name" class="name-label">Ваше имя</label>
+                        <input type="text" placeholder="Введите название" name="place-name" required>
+                      </div>
+                      <div class="pay__tel">
+                        <label for="place-tel" class="name-label">Ваш телефон</label>
+                        <input type="text" placeholder="Введите название" name="place-tel" required>
+                      </div>
+                    </div>
+
+                    <div class="pay__send-cont">
+                        <button type="submit" class="pay__send">Отправить</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="~/js/pay.js"></script>
+</body>
+</html>
